@@ -323,7 +323,7 @@
         
           
             <p>[TOC]</p>
-<h1 id="python3-学习爬虫遇到的一点编码问题"><a href="#python3-学习爬虫遇到的一点编码问题" class="headerlink" title="python3 学习爬虫遇到的一点编码问题"></a>python3 学习爬虫遇到的一点编码问题</h1><h2 id="上解决代码："><a href="#上解决代码：" class="headerlink" title="上解决代码："></a>上解决代码：</h2><pre class="line-numbers language-python"><code class="language-python"><span class="token comment" spellcheck="true">#coding='utf-8'</span>
+<h1 id="python3-xue-xi-pa-chong-yu-dao-de-yi-dian-bian-ma-wen-ti"><a href="#python3-xue-xi-pa-chong-yu-dao-de-yi-dian-bian-ma-wen-ti" class="header-anchor">1. </a><a href="#python3-学习爬虫遇到的一点编码问题" class="headerlink" title="python3 学习爬虫遇到的一点编码问题"></a>python3 学习爬虫遇到的一点编码问题</h1><h2 id="shang-jie-jue-dai-ma"><a href="#shang-jie-jue-dai-ma" class="header-anchor">1.1. </a><a href="#上解决代码：" class="headerlink" title="上解决代码："></a>上解决代码：</h2><pre class="line-numbers language-python"><code class="language-python"><span class="token comment" spellcheck="true">#coding='utf-8'</span>
 <span class="token keyword">import</span> chardet
 <span class="token keyword">import</span> requests<span class="token punctuation">,</span> re<span class="token punctuation">,</span> sys
 headers <span class="token operator">=</span> <span class="token punctuation">{</span>
@@ -353,7 +353,7 @@ fout <span class="token operator">=</span> open<span class="token punctuation">(
     fout<span class="token punctuation">.</span>write<span class="token punctuation">(</span><span class="token string">"ID: %s\nAge: %d\n顶: %d\n踩: %d\n评论:%d\n"</span><span class="token operator">%</span><span class="token punctuation">(</span>name<span class="token punctuation">,</span> age<span class="token punctuation">,</span> up<span class="token punctuation">,</span> comment<span class="token punctuation">,</span> down<span class="token punctuation">)</span><span class="token punctuation">)</span>
     fout<span class="token punctuation">.</span>write<span class="token punctuation">(</span><span class="token string">"\n"</span><span class="token punctuation">)</span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h2 id="总结一下就是：在windows上即使你想用utf-8的编码写入文件也不行，因为在windows上就是以gbk保存的。不知道是不是和系统语言有关系。"><a href="#总结一下就是：在windows上即使你想用utf-8的编码写入文件也不行，因为在windows上就是以gbk保存的。不知道是不是和系统语言有关系。" class="headerlink" title="总结一下就是：在windows上即使你想用utf-8的编码写入文件也不行，因为在windows上就是以gbk保存的。不知道是不是和系统语言有关系。"></a>总结一下就是：在windows上即使你想用utf-8的编码写入文件也不行，因为在windows上就是以gbk保存的。不知道是不是和系统语言有关系。</h2>
+<h2 id="zong-jie-yi-xia-jiu-shi-zai-windows-shang-ji-shi-ni-xiang-yong-utf-8-de-bian-ma-xie-ru-wen-jian-ye-bu-xing-yin-wei-zai-windows-shang-jiu-shi-yi-gbk-bao-cun-de-bu-zhi-dao-shi-bu-shi-he-xi-tong-yu-yan-you-guan-xi"><a href="#zong-jie-yi-xia-jiu-shi-zai-windows-shang-ji-shi-ni-xiang-yong-utf-8-de-bian-ma-xie-ru-wen-jian-ye-bu-xing-yin-wei-zai-windows-shang-jiu-shi-yi-gbk-bao-cun-de-bu-zhi-dao-shi-bu-shi-he-xi-tong-yu-yan-you-guan-xi" class="header-anchor">1.2. </a><a href="#总结一下就是：在windows上即使你想用utf-8的编码写入文件也不行，因为在windows上就是以gbk保存的。不知道是不是和系统语言有关系。" class="headerlink" title="总结一下就是：在windows上即使你想用utf-8的编码写入文件也不行，因为在windows上就是以gbk保存的。不知道是不是和系统语言有关系。"></a>总结一下就是：在windows上即使你想用utf-8的编码写入文件也不行，因为在windows上就是以gbk保存的。不知道是不是和系统语言有关系。</h2>
           
         
       
@@ -465,16 +465,16 @@ fout <span class="token operator">=</span> open<span class="token punctuation">(
         
           
             <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre class="line-numbers language-bash"><code class="language-bash">$ hexo new <span class="token string">"My New Post"</span>
+<h2 id="quick-start"><a href="#quick-start" class="header-anchor">1. </a><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="create-a-new-post"><a href="#create-a-new-post" class="header-anchor">1.1. </a><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre class="line-numbers language-bash"><code class="language-bash">$ hexo new <span class="token string">"My New Post"</span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre class="line-numbers language-bash"><code class="language-bash">$ hexo server
+<h3 id="run-server"><a href="#run-server" class="header-anchor">1.2. </a><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre class="line-numbers language-bash"><code class="language-bash">$ hexo server
 <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre class="line-numbers language-bash"><code class="language-bash">$ hexo generate
+<h3 id="generate-static-files"><a href="#generate-static-files" class="header-anchor">1.3. </a><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre class="line-numbers language-bash"><code class="language-bash">$ hexo generate
 <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre class="line-numbers language-bash"><code class="language-bash">$ hexo deploy
+<h3 id="deploy-to-remote-sites"><a href="#deploy-to-remote-sites" class="header-anchor">1.4. </a><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre class="line-numbers language-bash"><code class="language-bash">$ hexo deploy
 <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
 
