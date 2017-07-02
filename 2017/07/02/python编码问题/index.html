@@ -93,12 +93,16 @@
 
 
 
-<meta property="og:type" content="website">
+<meta name="description" content="[TOC] python3 学习爬虫遇到的一点编码问题上解决代码：1234567891011121314151617181920212223242526272829#coding=&amp;apos;utf-8&amp;apos;import chardetimport requests, re, sysheaders = &amp;#123;&amp;apos;User-Agent&amp;apos;: &amp;apos;Mozilla/5">
+<meta property="og:type" content="article">
 <meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:url" content="http://yoursite.com/2017/07/02/python编码问题/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="[TOC] python3 学习爬虫遇到的一点编码问题上解决代码：1234567891011121314151617181920212223242526272829#coding=&amp;apos;utf-8&amp;apos;import chardetimport requests, re, sysheaders = &amp;#123;&amp;apos;User-Agent&amp;apos;: &amp;apos;Mozilla/5">
+<meta property="og:updated_time" content="2017-07-02T04:50:19.897Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo">
+<meta name="twitter:description" content="[TOC] python3 学习爬虫遇到的一点编码问题上解决代码：1234567891011121314151617181920212223242526272829#coding=&amp;apos;utf-8&amp;apos;import chardetimport requests, re, sysheaders = &amp;#123;&amp;apos;User-Agent&amp;apos;: &amp;apos;Mozilla/5">
 
 
 
@@ -126,13 +130,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/07/02/python编码问题/"/>
 
 
 
 
 
-  <title>Hexo</title>
+  <title> | Hexo</title>
   
 
 
@@ -157,9 +161,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-   page-home 
- ">
+  <div class="container sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -242,9 +244,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -270,9 +272,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/07/02/python编码问题/" itemprop="url">Unbenannt</a></h1>
+          <h1 class="post-title" itemprop="name headline"></h1>
         
 
         <div class="post-meta">
@@ -319,25 +319,30 @@
       
 
       
-        
-          
-            <p>[TOC]</p>
+        <p>[TOC]</p>
 <h1 id="python3-学习爬虫遇到的一点编码问题"><a href="#python3-学习爬虫遇到的一点编码问题" class="headerlink" title="python3 学习爬虫遇到的一点编码问题"></a>python3 学习爬虫遇到的一点编码问题</h1><h2 id="上解决代码："><a href="#上解决代码：" class="headerlink" title="上解决代码："></a>上解决代码：</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div></pre></td><td class="code"><pre><div class="line">#coding=&apos;utf-8&apos;</div><div class="line">import chardet</div><div class="line">import requests, re, sys</div><div class="line">headers = &#123;</div><div class="line">&apos;User-Agent&apos;: &apos;Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_\</div><div class="line">4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 S\</div><div class="line">afari/537.36&apos;&#125;</div><div class="line">r = requests.get(&quot;https://www.qiushibaike.com&quot;, headers=headers)</div><div class="line">pattern=re.compile(&apos;&lt;div class=&quot;author.*?&lt;h2&gt;(.*?)&lt;/h2&gt;.*?Icon&quot;&gt;(.*?)&lt;/div&gt;.*?&lt;div class=&quot;content&quot;&gt;.*?&lt;span&gt;(.*?)&lt;/span&gt;.*?&lt;span.*?stats-vote.*?number&quot;&gt;(.*?)&lt;/i&gt;.*?stats-comments.*?number&quot;&gt;(.*?)&lt;/i&gt;.*?up.*?number hidden&quot;&gt;(.*?)&lt;/span&gt;.*?down.*?number hidden&quot;&gt;(.*?)&lt;/span&gt;&apos;,re.S)</div><div class="line">items = re.findall(pattern, r.text)</div><div class="line">fout = open(&quot;qiubai.txt&quot;, &apos;w&apos;)</div><div class="line">for i, item in enumerate(items):</div><div class="line">    fout.write(&quot;=========================================\n&quot;)</div><div class="line">    name = item[0]</div><div class="line">    age = int(item[1])</div><div class="line">    up = int(item[3])</div><div class="line">    comment = int(item[4])</div><div class="line">    down = -int(item[-1])</div><div class="line">    tot = int(item[5])</div><div class="line"></div><div class="line"></div><div class="line"></div><div class="line">    s = item[2].split(&quot;&lt;br/&gt;&quot;)</div><div class="line">    print(item)</div><div class="line">    for l in s:</div><div class="line">        gl = l.encode(&apos;gbk&apos;,&apos;ignore&apos;)</div><div class="line">        fout.write(&quot;%s\n&quot;%(gl.decode(&apos;gbk&apos;)))</div><div class="line">    fout.write(&quot;ID: %s\nAge: %d\n顶: %d\n踩: %d\n评论:%d\n&quot;%(name, age, up, comment, down))</div><div class="line">    fout.write(&quot;\n&quot;)</div></pre></td></tr></table></figure>
 <h2 id="总结一下就是：在windows上即使你想用utf-8的编码写入文件也不行，因为在windows上就是以gbk保存的。不知道是不是和系统语言有关系。"><a href="#总结一下就是：在windows上即使你想用utf-8的编码写入文件也不行，因为在windows上就是以gbk保存的。不知道是不是和系统语言有关系。" class="headerlink" title="总结一下就是：在windows上即使你想用utf-8的编码写入文件也不行，因为在windows上就是以gbk保存的。不知道是不是和系统语言有关系。"></a>总结一下就是：在windows上即使你想用utf-8的编码写入文件也不行，因为在windows上就是以gbk保存的。不知道是不是和系统语言有关系。</h2>
-          
+      
+    </div>
+
+    <div>
+      
         
+
       
     </div>
 
     <div>
       
-    </div>
+        
 
-    <div>
       
     </div>
 
     <div>
+      
+        
+
       
     </div>
 
@@ -345,141 +350,38 @@
       
 
       
-
-      
-
       
       
-        <div class="post-eof"></div>
+
       
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/07/02/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="John Doe">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/07/02/hello-world/" itemprop="url">Hello World</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Veröffentlicht am</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-07-02T12:09:56+08:00">
-                2017-07-02
-              </time>
+              <a href="/2017/07/02/hello-world/" rel="next" title="Hello World">
+                <i class="fa fa-chevron-left"></i> Hello World
+              </a>
             
+          </div>
 
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
             
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -487,6 +389,10 @@
 
 
           
+  <div class="comments" id="comments">
+    
+  </div>
+
 
         </div>
         
@@ -506,8 +412,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            Inhaltsverzeichnis
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            Übersicht
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.gif"
@@ -551,6 +466,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#python3-学习爬虫遇到的一点编码问题"><span class="nav-number">1.</span> <span class="nav-text">python3 学习爬虫遇到的一点编码问题</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#上解决代码："><span class="nav-number">1.1.</span> <span class="nav-text">上解决代码：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#总结一下就是：在windows上即使你想用utf-8的编码写入文件也不行，因为在windows上就是以gbk保存的。不知道是不是和系统语言有关系。"><span class="nav-number">1.2.</span> <span class="nav-text">总结一下就是：在windows上即使你想用utf-8的编码写入文件也不行，因为在windows上就是以gbk保存的。不知道是不是和系统语言有关系。</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -671,10 +602,10 @@
 
 
   
-    <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
 <script type="text/javascript" src="/js/src/post-details.js?v=5.1.1"></script>
 
-  
+
 
   
 
