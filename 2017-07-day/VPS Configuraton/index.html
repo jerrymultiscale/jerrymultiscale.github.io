@@ -463,20 +463,20 @@
 
       
         <p>VPS（Virtual Private Server 虚拟专用服务器）技术，将一台服务器分割成多个虚拟专享服务器的优质服务。简单的说，VPS就是一台拥有公网IP的服务器总结一下VPS搭建的过程，从域名的购买到VPS的设置<br><a id="more"></a></p>
-<h1 id="vps的配置"><a href="#vps的配置" class="header-anchor"></a>1. <a href="#VPS_u7684_u914D_u7F6E" class="headerlink" title="VPS的配置"></a>VPS的配置</h1><h2 id="vps的购买-tbd"><a href="#vps的购买-tbd" class="header-anchor"></a>1.1. <a href="#VPS_u7684_u8D2D_u4E70_TBD" class="headerlink" title="VPS的购买 TBD"></a>VPS的购买 TBD</h2><h2 id="vps在ubuntu-1704下的软件配置"><a href="#vps在ubuntu-1704下的软件配置" class="header-anchor"></a>1.2. <a href="#VPS_u5728ubuntu_17-04_u4E0B_u7684_u8F6F_u4EF6_u914D_u7F6E" class="headerlink" title="VPS在ubuntu 17.04下的软件配置"></a>VPS在ubuntu 17.04下的软件配置</h2><pre class="line-numbers language-bash"><code class="language-bash">$ <span class="token function">apt-get</span> update <span class="token operator">&amp;&amp;</span> <span class="token function">apt-get</span> upgrade
+<h1 id="vps的配置"><a href="#vps的配置" class="header-anchor"></a>1. <a href="#VPS的配置" class="headerlink" title="VPS的配置"></a>VPS的配置</h1><h2 id="vps的购买-tbd"><a href="#vps的购买-tbd" class="header-anchor"></a>1.1. <a href="#VPS的购买-TBD" class="headerlink" title="VPS的购买 TBD"></a>VPS的购买 TBD</h2><h2 id="vps在ubuntu-1704下的软件配置"><a href="#vps在ubuntu-1704下的软件配置" class="header-anchor"></a>1.2. <a href="#VPS在ubuntu-17-04下的软件配置" class="headerlink" title="VPS在ubuntu 17.04下的软件配置"></a>VPS在ubuntu 17.04下的软件配置</h2><pre class="line-numbers language-bash"><code class="language-bash">$ <span class="token function">apt-get</span> update <span class="token operator">&amp;&amp;</span> <span class="token function">apt-get</span> upgrade
 $ <span class="token function">apt-get</span> <span class="token function">install</span> <span class="token function">git</span> git-core
 $ curl -sL https://deb.nodesource.com/setup_6.x <span class="token operator">|</span> <span class="token function">sudo</span> -E <span class="token function">bash</span> -
 $ <span class="token function">apt-get</span> <span class="token function">install</span> -y nodejs
 $ <span class="token function">npm</span> <span class="token function">install</span> hexo-cli hexo-server -g
 $ <span class="token function">apt-get</span> <span class="token function">install</span> nginx
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h1 id="第三方服务"><a href="#第三方服务" class="header-anchor"></a>2. <a href="#u7B2C_u4E09_u65B9_u670D_u52A1" class="headerlink" title="第三方服务"></a>第三方服务</h1><h2 id="腾讯企业邮箱"><a href="#腾讯企业邮箱" class="header-anchor"></a>2.1. <a href="#u817E_u8BAF_u4F01_u4E1A_u90AE_u7BB1" class="headerlink" title="腾讯企业邮箱"></a>腾讯企业邮箱</h2><ol>
+<h1 id="第三方服务"><a href="#第三方服务" class="header-anchor"></a>2. <a href="#第三方服务" class="headerlink" title="第三方服务"></a>第三方服务</h1><h2 id="腾讯企业邮箱"><a href="#腾讯企业邮箱" class="header-anchor"></a>2.1. <a href="#腾讯企业邮箱" class="headerlink" title="腾讯企业邮箱"></a>腾讯企业邮箱</h2><ol>
 <li>购买域名</li>
 <li>注册腾讯企业邮箱</li>
 <li>在域名购买处填写MX记录 （注册腾讯企业邮箱过程中会有提示）</li>
 <li>SPF 防止发出的邮件被识别为垃圾邮件。SPF是通过域名的TXT记录来进行设置的。<br>为了提升域名邮箱发送外域（@qq.com以外的邮箱）邮件的成功率，可以给自己的域名设置一条TXT记录来避免这种情况。 TXT记录值为：<code>v=spf1 include:spf.mail.qq.com ~all</code></li>
 </ol>
-<h2 id="shadowsocks的搭建"><a href="#shadowsocks的搭建" class="header-anchor"></a>2.2. <a href="#Shadowsocks_u7684_u642D_u5EFA" class="headerlink" title="Shadowsocks的搭建"></a>Shadowsocks的搭建</h2><p>见<a href="http://jiaxm.me/2017-07-day/Shadowsocks%20%E6%90%AD%E5%BB%BA/#more" target="_blank" rel="external">站内文章-Shadowsocks搭建</a></p>
+<h2 id="shadowsocks的搭建"><a href="#shadowsocks的搭建" class="header-anchor"></a>2.2. <a href="#Shadowsocks的搭建" class="headerlink" title="Shadowsocks的搭建"></a>Shadowsocks的搭建</h2><p>见<a href="http://jiaxm.me/2017-07-day/Shadowsocks%20%E6%90%AD%E5%BB%BA/#more" target="_blank" rel="external">站内文章-Shadowsocks搭建</a></p>
 
       
     </div>
@@ -626,7 +626,7 @@ $ <span class="token function">apt-get</span> <span class="token function">insta
           
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
-                <span class="site-state-item-count">9</span>
+                <span class="site-state-item-count">10</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
