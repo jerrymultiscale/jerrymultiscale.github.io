@@ -31,14 +31,6 @@
     </url>
 
     <url>
-        <loc>http://www.jiaxm.me/2017-07-day/NumPy%20Learn/</loc>
-        <lastmod>2017-07-22T15:33:23.429Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>http://www.jiaxm.me/2017-07-day/Shadowsocks_Configuration/</loc>
         <lastmod>2017-07-22T15:33:23.429Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -47,7 +39,7 @@
     </url>
 
     <url>
-        <loc>http://www.jiaxm.me/2017-07-day/ShiCiGeFu/</loc>
+        <loc>http://www.jiaxm.me/2017-07-day/NumPy%20Learn/</loc>
         <lastmod>2017-07-22T15:33:23.429Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -56,6 +48,14 @@
 
     <url>
         <loc>http://www.jiaxm.me/2017-07-day/Ubuntu_Rescue_Mode_Repair/</loc>
+        <lastmod>2017-07-22T15:33:23.429Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://www.jiaxm.me/2017-07-day/ShiCiGeFu/</loc>
         <lastmod>2017-07-22T15:33:23.429Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
