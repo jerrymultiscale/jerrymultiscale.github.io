@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.jiaxm.me/"/>
-  <updated>2017-07-22T15:33:23.430Z</updated>
+  <updated>2017-07-23T03:11:39.178Z</updated>
   <id>http://www.jiaxm.me/</id>
   
   <author>
@@ -14,6 +14,49 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Emacs学习笔记</title>
+    <link href="http://www.jiaxm.me/2017-07-day/Emacs%20Learn/"/>
+    <id>http://www.jiaxm.me/2017-07-day/Emacs Learn/</id>
+    <published>2017-07-23T03:07:00.000Z</published>
+    <updated>2017-07-23T03:11:39.178Z</updated>
+    
+    <content type="html"><![CDATA[<p>Learn emacs from now on!<br><a id="more"></a></p>
+<h1 id="1-基本操作"><a href="#基本操作" class="header-anchor"></a>1. <a href="#u57FA_u672C_u64CD_u4F5C" class="headerlink" title="基本操作"></a>基本操作</h1><h1 id="2-学会使用文档"><a href="#学会使用文档" class="header-anchor"></a>2. <a href="#u5B66_u4F1A_u4F7F_u7528_u6587_u6863" class="headerlink" title="学会使用文档"></a>学会使用文档</h1><p>Emacs 强大的自文档也是其优势之一，任何时候你想要查找文档都无需离开 Emacs 自身。查看帮助文档相关命令的快捷键都是以 C-h 为 prefix 键：</p>
+<ul>
+<li>C-h k：查看某个快捷键（组合）的用处或者绑定的函数。</li>
+<li>C-h f：查看某个函数的作用，以及它绑定的快捷键。</li>
+<li>C-h v：查看某个 Emacs 变量的值。</li>
+</ul>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Learn emacs from now on!&lt;br&gt;
+    
+    </summary>
+    
+      <category term="emacs" scheme="http://www.jiaxm.me/categories/emacs/"/>
+    
+    
+      <category term="emacs" scheme="http://www.jiaxm.me/tags/emacs/"/>
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="http://www.jiaxm.me/2017-07-day/Learn/"/>
+    <id>http://www.jiaxm.me/2017-07-day/Learn/</id>
+    <published>2017-07-23T03:06:02.618Z</published>
+    <updated>2017-07-23T03:06:02.618Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title></title>
