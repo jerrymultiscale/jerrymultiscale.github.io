@@ -3,6 +3,28 @@
 
 
     
+  <url>
+    <loc>http://www.jiaxm.me/2017-07-day/Hexo%20Configuration/</loc>
+    <lastmod>2017-07-23T09:48:00.275Z</lastmod>
+    <data>
+        <display>
+        <title>Hexo Configuration</title>
+        <pubTime>2017-07-13T11:40:00.000Z</pubTime>
+        
+        <tag>next</tag>
+         
+        <tag>hexo</tag>
+         
+         
+           
+             
+              <breadCrumb title="hexo" url="http://www.jiaxm.me/categories/hexo/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
     
   <url>
     <loc>http://www.jiaxm.me/2017-07-day/Emacs%20Learn/</loc>
@@ -24,26 +46,6 @@
     </url>
 
     
-    
-  <url>
-    <loc>http://www.jiaxm.me/2017-07-day/NumPy%20Learn/</loc>
-    <lastmod>2017-07-22T15:33:23.429Z</lastmod>
-    <data>
-        <display>
-        <title>Learn Numpy The Hard Way</title>
-        <pubTime>2017-07-19T01:55:00.000Z</pubTime>
-        
-        <tag>python</tag>
-         
-         
-           
-             
-              <breadCrumb title="python" url="http://www.jiaxm.me/categories/python/"/>
-          
-        </display>
-    </data>
-    </url>
-
     
   <url>
     <loc>http://www.jiaxm.me/2017-07-day/Shadowsocks_Configuration/</loc>
@@ -80,21 +82,19 @@
 
     
   <url>
-    <loc>http://www.jiaxm.me/2017-07-day/Hexo%20Configuration/</loc>
+    <loc>http://www.jiaxm.me/2017-07-day/NumPy%20Learn/</loc>
     <lastmod>2017-07-22T15:33:23.429Z</lastmod>
     <data>
         <display>
-        <title>Hexo Configuration</title>
-        <pubTime>2017-07-13T11:40:00.000Z</pubTime>
+        <title>Learn Numpy The Hard Way</title>
+        <pubTime>2017-07-19T01:55:00.000Z</pubTime>
         
-        <tag>next</tag>
-         
-        <tag>hexo</tag>
+        <tag>python</tag>
          
          
            
              
-              <breadCrumb title="hexo" url="http://www.jiaxm.me/categories/hexo/"/>
+              <breadCrumb title="python" url="http://www.jiaxm.me/categories/python/"/>
           
         </display>
     </data>
