@@ -261,7 +261,7 @@ grub<span class="token operator">></span> boot
     <link href="http://www.jiaxm.me/2017-07-day/Shadowsocks_Configuration/"/>
     <id>http://www.jiaxm.me/2017-07-day/Shadowsocks_Configuration/</id>
     <published>2017-07-13T16:00:00.000Z</published>
-    <updated>2017-07-22T15:33:23.429Z</updated>
+    <updated>2017-07-23T12:31:43.863Z</updated>
     
     <content type="html"><![CDATA[<p>对于做科研、写代码的同学来说，翻<a href="https://zh.wikipedia.org/wiki/%E9%98%B2%E7%81%AB%E9%95%BF%E5%9F%8E" target="_blank" rel="external">GFW</a>是必不可少的，对于专业的资料来说，google/sholar搜索的丰富程度可以秒某度的。梯子有很多种，例如改hosts、vpn(SoftEther)、浏览器翻墙的插件(谷歌上网助手)、自由门、GoAgent、cow、Lantern等等。今天我们来介绍一下在国外<a href="https://en.wikipedia.org/wiki/Virtual_private_server" target="_blank" rel="external">VPS</a>(Virtual private server)的搭建，不只是可以用来上google，scholar等，可以说相当于拥有了国外的网络环境，没有限制的浏览国外网站。<br><a id="more"></a></p>
 <h1 id="shadowsocks-简介"><a href="#shadowsocks-简介" class="header-anchor"></a>1. <a href="#Shadowsocks__u7B80_u4ECB" class="headerlink" title="Shadowsocks 简介"></a>Shadowsocks 简介</h1><p>维基百科搬运：</p>
@@ -296,7 +296,41 @@ grub<span class="token operator">></span> boot
 <span class="token property">"method"</span><span class="token operator">:</span><span class="token string">"rc4-md5"</span>
 <span class="token punctuation">}</span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>字段含义：<br>字段 | 含义<br>———— | ————-<br>server | 服务器 IP (IPv4/IPv6)<br>server_port | 服务器端口<br>local_port | 本地端端口<br>password | 密码<br>timeout | 超时时间(s)<br>method | 加密方法， 可选“bf-cfb”, “aes-256-cfb”, “rc4-md5”,等</p>
+<p>字段含义：</p>
+<table>
+<thead>
+<tr>
+<th>字段</th>
+<th>含义  </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>server</td>
+<td>服务器 IP (IPv4/IPv6)</td>
+</tr>
+<tr>
+<td>server_port</td>
+<td>服务器端口</td>
+</tr>
+<tr>
+<td>local_port</td>
+<td>本地端端口</td>
+</tr>
+<tr>
+<td>password</td>
+<td>密码</td>
+</tr>
+<tr>
+<td>timeout</td>
+<td>超时时间(s)</td>
+</tr>
+<tr>
+<td>method</td>
+<td>加密方法， 可选“bf-cfb”, “aes-256-cfb”, “rc4-md5”,等</td>
+</tr>
+</tbody>
+</table>
 <blockquote>
 <p>加密方式推荐使用rc4-md5，因为 RC4 比 AES 速度快好几倍，如果用在路由器上会带来显著性能提升。旧的 RC4 加密之所以不安全是因为 Shadowsocks 在每个连接上重复使用 key，没有使用 IV。现在已经重新正确实现，可以放心使用。</p>
 </blockquote>
