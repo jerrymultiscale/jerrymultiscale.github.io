@@ -3,9 +3,10 @@
 
 
     
+    
   <url>
     <loc>http://www.jiaxm.me/2017-07-day/Emacs%20Learn/</loc>
-    <lastmod>2017-07-23T03:19:44.823Z</lastmod>
+    <lastmod>2017-07-23T07:56:52.586Z</lastmod>
     <data>
         <display>
         <title>Emacs学习笔记</title>
@@ -53,28 +54,6 @@
            
              
               <breadCrumb title="python" url="http://www.jiaxm.me/categories/python/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.jiaxm.me/2017-07-day/Ubuntu_Rescue_Mode_Repair/</loc>
-    <lastmod>2017-07-22T15:33:23.429Z</lastmod>
-    <data>
-        <display>
-        <title>Linux与Windows双系统启动引导恢复</title>
-        <pubTime>2017-07-17T16:00:00.000Z</pubTime>
-        
-        <tag>linux</tag>
-         
-        <tag>grub</tag>
-         
-         
-           
-             
-              <breadCrumb title="linux" url="http://www.jiaxm.me/categories/linux/"/>
           
         </display>
     </data>
@@ -138,14 +117,16 @@
 
     
   <url>
-    <loc>http://www.jiaxm.me/2017-07-day/Linux_Terminal_Shortcuts/</loc>
+    <loc>http://www.jiaxm.me/2017-07-day/Ubuntu_Rescue_Mode_Repair/</loc>
     <lastmod>2017-07-22T15:33:23.429Z</lastmod>
     <data>
         <display>
-        <title>Linux命令行快捷键</title>
-        <pubTime>2017-07-12T16:00:00.000Z</pubTime>
+        <title>Linux与Windows双系统启动引导恢复</title>
+        <pubTime>2017-07-17T16:00:00.000Z</pubTime>
         
         <tag>linux</tag>
+         
+        <tag>grub</tag>
          
          
            
@@ -179,6 +160,25 @@
     </url>
 
     
+  <url>
+    <loc>http://www.jiaxm.me/2017-07-day/Linux_Terminal_Shortcuts/</loc>
+    <lastmod>2017-07-22T15:33:23.429Z</lastmod>
+    <data>
+        <display>
+        <title>Linux命令行快捷键</title>
+        <pubTime>2017-07-12T16:00:00.000Z</pubTime>
+        
+        <tag>linux</tag>
+         
+         
+           
+             
+              <breadCrumb title="linux" url="http://www.jiaxm.me/categories/linux/"/>
+          
+        </display>
+    </data>
+    </url>
+
     
     
     

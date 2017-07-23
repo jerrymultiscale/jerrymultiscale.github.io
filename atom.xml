@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.jiaxm.me/"/>
-  <updated>2017-07-23T03:19:44.823Z</updated>
+  <updated>2017-07-23T07:56:52.586Z</updated>
   <id>http://www.jiaxm.me/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://www.jiaxm.me/2017-07-day/Emacs%20Learn/"/>
     <id>http://www.jiaxm.me/2017-07-day/Emacs Learn/</id>
     <published>2017-07-23T03:07:00.000Z</published>
-    <updated>2017-07-23T03:19:44.823Z</updated>
+    <updated>2017-07-23T07:56:52.586Z</updated>
     
     <content type="html"><![CDATA[<p>Learn emacs from now on!<br><a id="more"></a></p>
 <h1 id="emacs简介"><a href="#emacs简介" class="header-anchor"></a>1. <a href="#Emacs_u7B80_u4ECB" class="headerlink" title="Emacs简介"></a>Emacs简介</h1><p>Emacs是一种强大的文本编辑器，在程序员和其他以技术工作为主的计算机用户中广受欢迎。EMACS，即Editor MACroS（宏编辑器）的缩写，最初由Richard Stallman于1975年在MIT协同Guy Steele共同完成。这一创意的灵感来源于TECMAC和TMACS，它们是由Guy Steele、Dave Moon、Richard Greenblatt、Charles Frankston等人编写的宏文本编辑器。自诞生以来，Emacs演化出了众多分支，其中使用最广泛的两种分别是：1984年由Richard Stallman发起并由他维护至今的GNU Emacs，以及1991年发起的XEmacs。XEmacs是GNU Emacs的分支，至今仍保持着相当的兼容性。它们都使用了Emacs Lisp这种有着极强扩展性的编程语言，从而实现了包括编程、编译乃至网络浏览等等功能的扩展。<br>在Unix文化里，Emacs是黑客们关于编辑器优劣之争的两大主角之一，它的对手是vi文本编辑器。</p>
