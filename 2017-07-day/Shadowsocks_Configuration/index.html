@@ -120,12 +120,10 @@
 <meta property="og:site_name" content="Memories">
 <meta property="og:description" content="对于做科研、写代码的同学来说，翻GFW是必不可少的，对于专业的资料来说，google/sholar搜索的丰富程度可以秒某度的。梯子有很多种，例如改hosts、vpn(SoftEther)、浏览器翻墙的插件(谷歌上网助手)、自由门、GoAgent、cow、Lantern等等。今天我们来介绍一下在国外VPS(Virtual private server)的搭建，不只是可以用来上google，schol">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://www.jiaxm.me/images/scenery.jpg">
 <meta property="og:updated_time" content="2017-07-24T13:03:10.440Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Shadowsocks 的搭建">
 <meta name="twitter:description" content="对于做科研、写代码的同学来说，翻GFW是必不可少的，对于专业的资料来说，google/sholar搜索的丰富程度可以秒某度的。梯子有很多种，例如改hosts、vpn(SoftEther)、浏览器翻墙的插件(谷歌上网助手)、自由门、GoAgent、cow、Lantern等等。今天我们来介绍一下在国外VPS(Virtual private server)的搭建，不只是可以用来上google，schol">
-<meta name="twitter:image" content="http://www.jiaxm.me/images/scenery.jpg">
 
 
 
@@ -442,7 +440,7 @@
       
 
       
-        <p>对于做科研、写代码的同学来说，翻<a href="https://zh.wikipedia.org/wiki/%E9%98%B2%E7%81%AB%E9%95%BF%E5%9F%8E" target="_blank" rel="external">GFW</a>是必不可少的，对于专业的资料来说，google/sholar搜索的丰富程度可以秒某度的。梯子有很多种，例如改hosts、vpn(SoftEther)、浏览器翻墙的插件(谷歌上网助手)、自由门、GoAgent、cow、Lantern等等。今天我们来介绍一下在国外<a href="https://en.wikipedia.org/wiki/Virtual_private_server" target="_blank" rel="external">VPS</a>(Virtual private server)的搭建，不只是可以用来上google，scholar等，可以说相当于拥有了国外的网络环境，没有限制的浏览国外网站。<br><a id="more"></a></p>
+        <p>对于做科研、写代码的同学来说，翻<a href="https://zh.wikipedia.org/wiki/%E9%98%B2%E7%81%AB%E9%95%BF%E5%9F%8E" target="_blank" rel="external">GFW</a>是必不可少的，对于专业的资料来说，google/sholar搜索的丰富程度可以秒某度的。梯子有很多种，例如改hosts、vpn(SoftEther)、浏览器翻墙的插件(谷歌上网助手)、自由门、GoAgent、cow、Lantern等等。今天我们来介绍一下在国外<a href="https://en.wikipedia.org/wiki/Virtual_private_server" target="_blank" rel="external">VPS</a>(Virtual private server)的搭建，不只是可以用来上google，scholar等，可以说相当于拥有了国外的网络环境，没有限制的浏览国外网站。<br>&lt;!--more--&gt;</p>
 <h1 id="shadowsocks-简介"><a href="#shadowsocks-简介" class="header-anchor"></a>1. <a href="#Shadowsocks__u7B80_u4ECB" class="headerlink" title="Shadowsocks 简介"></a>Shadowsocks 简介</h1><p>维基百科搬运：</p>
 <blockquote>
 <blockquote>
@@ -599,7 +597,7 @@ net.ipv4.ip_forward <span class="token operator">=</span> 1
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>其中最后的<code>hybla</code>是为高延迟网络（如美国，欧洲）准备的算法，需要内核支持，测试内核是否支持，在终端输入：<code>sysctl net.ipv4.tcp_available_congestion_control</code><br>如果结果中有<code>hybla</code>，则证明你的内核已开启<code>hybla</code>，如果没有<code>hybla</code>，可以用命令<code>modprobe tcp_hybla</code>开启。</p>
 <p>对于低延迟的网络（如日本，香港等），可以使用<code>htcp</code>，可以非常显著的提高速度，首先使用<code>modprobe tcp_htcp</code>开启，再将<code>net.ipv4.tcp_congestion_control = hybla改为net.ipv4.tcp_congestion_control = htcp</code>，建议EC2日本用户使用这个算法。</p>
-<p>使配置生效：sysctl –system<br>note: 经过手机Andoid客户端测试, 速度确实有提升（之前手机端速度感觉已经很快了！），YouTube上1080p的高清视频一点不卡，甚至于还没有缓冲到的时间点直接点击在3秒之内都可以缓冲出来（这个时候的即时速度可以到3M/s）。<img src="/images/scenery.jpg"><br>YouTube 1080p高清测试视频，<a href="https://youtu.be/6v2L2UGZJAM" target="_blank" rel="external">Planet Earth: Amazing nature scenery</a></p>
+<p>使配置生效：sysctl –system<br>note: 经过手机Andoid客户端测试, 速度确实有提升（之前手机端速度感觉已经很快了！），YouTube上1080p的高清视频一点不卡，甚至于还没有缓冲到的时间点直接点击在3秒之内都可以缓冲出来（这个时候的即时速度可以到3M/s）。&lt;img src=&quot;/images/scenery.jpg&quot;/&gt;<br>YouTube 1080p高清测试视频，<a href="https://youtu.be/6v2L2UGZJAM" target="_blank" rel="external">Planet Earth: Amazing nature scenery</a></p>
 <h4 id="tcp优化"><a href="#tcp优化" class="header-anchor"></a>2.2.4.2. <a href="#TCP_u4F18_u5316" class="headerlink" title="TCP优化"></a>TCP优化</h4><p>1.修改文件句柄数限制<br>如果是ubuntu/centos均可修改/etc/sysctl.d/local.conf<br>找到fs.file-max这一行，修改其值为1024000，并保存退出。然后执行<code>sysctl -p</code>使其生效<br>修改vi /etc/security/limits.conf文件，加入</p>
 <pre class="line-numbers language-bash"><code class="language-bash">*               soft    nofile           512000
 *               hard    nofile          1024000

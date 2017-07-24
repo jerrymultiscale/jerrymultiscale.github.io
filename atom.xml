@@ -22,7 +22,7 @@
     <published>2017-07-24T13:21:00.000Z</published>
     <updated>2017-07-24T13:24:11.695Z</updated>
     
-    <content type="html"><![CDATA[<p>Markdown语法测试<br><a id="more"></a></p>
+    <content type="html"><![CDATA[<p>Markdown语法测试<br>&lt;!--more--&gt;</p>
 <h1 id="任务列表"><a href="#任务列表" class="header-anchor"></a>1. <a href="#u4EFB_u52A1_u5217_u8868" class="headerlink" title="任务列表"></a>任务列表</h1><p>在任务项目前面加[]。用[x]表示此项已完成。</p>
 <pre><code>- [x] Finish my changes
 - [ ] Push my commits to GitHub
@@ -41,7 +41,8 @@
     
     <summary type="html">
     
-      &lt;p&gt;Markdown语法测试&lt;br&gt;
+      &lt;p&gt;Markdown语法测试&lt;br&gt;&amp;lt;!--more--&amp;gt;&lt;/p&gt;
+&lt;h1 id=&quot;任务列表&quot;&gt;&lt;a href=&quot;#任务列表&quot; class=&quot;header-anchor&quot;&gt;&lt;/a&gt;1. &lt;a href=&quot;#u4EFB_u52A1_u5217_u8868&quot; class
     
     </summary>
     
@@ -60,14 +61,14 @@
     <updated>2017-07-22T15:33:23.429Z</updated>
     
     <content type="html"><![CDATA[<p>落霞与孤鹜齐飞，秋水共长天一色</p>
-<p><img src="http://res.cloudinary.com/jiaxm/image/upload/v1500469825/tengwanggexu.jpg" alt=""><br><a id="more"></a></p>
+<p><img src="http://res.cloudinary.com/jiaxm/image/upload/v1500469825/tengwanggexu.jpg" alt=""><br>&lt;!--more--&gt;</p>
 <h1 id="滕王阁序"><a href="#滕王阁序" class="header-anchor"></a>1. <a href="#u300A_u6ED5_u738B_u9601_u5E8F_u300B" class="headerlink" title="《滕王阁序》"></a>《滕王阁序》</h1><p>&emsp;&emsp;南昌（豫章）故郡，洪都新府。星分翼轸，地接衡庐。襟三江而带五湖，控蛮荆而引瓯越。物华天宝，龙光射牛斗之墟；人杰地灵，徐孺下陈蕃之榻。雄州雾列，俊采星驰，台隍枕夷夏之交，宾主尽东南之美。都督阎公之雅望，棨戟遥临；宇文新州之懿范，襜帷暂驻。十旬休假，胜友如云；千里逢迎，高朋满座。腾蛟起凤，孟学士之词宗；紫电青霜，王将军之武库。家君作宰，路出名区；童子何知，躬逢胜饯。<br>　　时维九月，序属三秋。潦水尽而寒潭清，烟光凝而暮山紫。俨骖騑于上路，访风景于崇阿。临帝子之长洲，得仙人之旧馆。层台耸翠，上出重霄；飞阁流丹，下临无地。鹤汀凫渚，穷岛屿之萦回；桂殿兰宫，列冈峦之体势。披绣闼，俯雕甍，山原旷其盈视，川泽盱其骇瞩。闾阎扑地，钟鸣鼎食之家；舸舰迷津，青雀黄龙之轴。虹销雨霁，彩彻区明。落霞与孤鹜齐飞，秋水共长天一色。渔舟唱晚，响穷彭蠡之滨；雁阵惊寒，声断衡阳之浦。<br>　　遥襟俯畅，逸兴遄飞。爽籁发而清风生，纤歌凝而白云遏。睢园绿竹，气凌彭泽之樽；邺水朱华，光照临川之笔。四美具，二难并。穷睇眄于中天，极娱游于暇日。<br>　　天高地迥，觉宇宙之无穷；兴尽悲来，识盈虚之有数。望长安于日下，指吴会于云间。地势极而南溟深，天柱高而北辰远。关山难越，谁悲失路之人？萍水相逢，尽是他乡之客。怀帝阍而不见，奉宣室以何年？<br>　　嗟乎！时运不济，命运多舛。冯唐易老，李广难封。屈贾谊于长沙，非无圣主；窜梁鸿于海曲，岂乏明时。所赖君子安贫，达人知命。老当益壮，宁移白首之心？穷且益坚，不坠青云之志。酌贪泉而觉爽，处涸辙以犹欢。北海虽赊，扶摇可接；东隅已逝，桑榆非晚。孟尝高洁，空怀报国之心；阮藉猖狂，岂效穷途之哭！<br>　　勃，三尺微命，一介书生。无路请缨，等终军之弱冠；有怀投笔，慕宗懿之长风。舍簪笏于百龄，奉晨昏于万里。非谢家之宝树，接孟氏之芳邻。他日趋庭，叨陪鲤对；今晨捧袂，喜托龙门。杨意不逢，抚凌云而自惜；钟期既遇，奏流水以何惭？<br>　　鸣呼！胜地不常，盛筵难再。兰亭已矣，梓泽丘墟。临别赠言，幸承恩于伟饯；登高作赋，是所望于群公。敢竭鄙诚，恭疏短引。一言均赋，四韵俱成。请洒潘江，各倾陆海云尔！<br>　<br>　　滕王高阁临江渚，<br>　　佩玉鸣鸾罢歌舞。<br>　　画栋朝飞南浦云，<br>　　珠帘暮卷西山雨。<br>　<br>　　闲云潭影日悠悠，<br>　　物换星移几度秋。<br>　　阁中帝子今何在？<br>　　槛外长江空自流。</p>
 ]]></content>
     
     <summary type="html">
     
       &lt;p&gt;落霞与孤鹜齐飞，秋水共长天一色&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://res.cloudinary.com/jiaxm/image/upload/v1500469825/tengwanggexu.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;
+&lt;p&gt;&lt;img src=&quot;http://res.cloudinary.com/jiaxm/image/upload/v1500469825/tengwanggexu.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;&amp;lt;!--more--&amp;gt;&lt;
     
     </summary>
     
@@ -82,7 +83,8 @@
     <updated>2017-07-24T13:02:51.637Z</updated>
     
     <content type="html"><![CDATA[<p>NumPy, which stands for Numerical Python, is a library consisting of multidimensional array objects and a collection of routines for processing those arrays. Using NumPy, mathematical and logical operations on arrays can be performed<br>一些参考资料：<br><a href="http://scipy-lectures.github.io/intro/numpy/index.html" target="_blank" rel="external">Basics of numpy</a><br><a href="http://scipy-lectures.github.io/intro/numpy/exercises.html" target="_blank" rel="external">Some numpy exercises</a><br><a href="http://scipy-lectures.github.io/advanced/advanced_numpy/" target="_blank" rel="external">Advanced numpy</a><br><a href="http://docs.scipy.org/doc/numpy/reference/" target="_blank" rel="external">Numpy reference</a></p>
-<a id="more"></a>
+<p>&lt;!--more--&gt;
+</p>
 <h1 id="numpy的前世今生"><a href="#numpy的前世今生" class="header-anchor"></a>1. <a href="#Numpy_u7684_u524D_u4E16_u4ECA_u751F" class="headerlink" title="Numpy的前世今生"></a>Numpy的前世今生</h1><p><strong>Numeric</strong>, the ancestor of NumPy, was developed by Jim Hugunin. Another package Numarray was also developed, having some additional functionalities. In 2005, Travis Oliphant created NumPy package by incorporating the features of Numarray into Numeric package. There are many contributors to this open source project.</p>
 <h1 id="numpy数值类型"><a href="#numpy数值类型" class="header-anchor"></a>2. <a href="#Numpy_u6570_u503C_u7C7B_u578B" class="headerlink" title="Numpy数值类型"></a>Numpy数值类型</h1><p>NumPy中的基本数据类型</p>
 <table>
@@ -225,7 +227,7 @@ array<span class="token punctuation">(</span><span class="token punctuation">[</
     
     <summary type="html">
     
-      &lt;p&gt;NumPy, which stands for Numerical Python, is a library consisting of multidimensional array objects and a collection of routines for processing those arrays. Using NumPy, mathematical and logical operations on arrays can be performed&lt;br&gt;一些参考资料：&lt;br&gt;&lt;a href=&quot;http://scipy-lectures.github.io/intro/numpy/index.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Basics of numpy&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://scipy-lectures.github.io/intro/numpy/exercises.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Some numpy exercises&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://scipy-lectures.github.io/advanced/advanced_numpy/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Advanced numpy&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://docs.scipy.org/doc/numpy/reference/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Numpy reference&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;NumPy, which stands for Numerical Python, is a library consisting of multidimensional array objects and a collection of routines for proc
     
     </summary>
     
@@ -243,7 +245,7 @@ array<span class="token punctuation">(</span><span class="token punctuation">[</
     <published>2017-07-17T16:00:00.000Z</published>
     <updated>2017-07-22T15:33:23.429Z</updated>
     
-    <content type="html"><![CDATA[<p>由grub引导的Linux与Windows共存的双系统环境中，Windows版本更新的时候常会出现grub引导失败，造成系统无法正常启动的问题。这是因为Windows更新的过程中导致MBR损坏导致无法找到/boot/grub部分，无法进一步引导系统。而这种情况下启动界面上会启动<code>grub rescue</code>模式，本文即在此模式下恢复grub引导。<br><a id="more"></a></p>
+    <content type="html"><![CDATA[<p>由grub引导的Linux与Windows共存的双系统环境中，Windows版本更新的时候常会出现grub引导失败，造成系统无法正常启动的问题。这是因为Windows更新的过程中导致MBR损坏导致无法找到/boot/grub部分，无法进一步引导系统。而这种情况下启动界面上会启动<code>grub rescue</code>模式，本文即在此模式下恢复grub引导。<br>&lt;!--more--&gt;</p>
 <h1 id="术语简述"><a href="#术语简述" class="header-anchor"></a>1. <a href="#u672F_u8BED_u7B80_u8FF0" class="headerlink" title="术语简述"></a>术语简述</h1><h2 id="bios"><a href="#bios" class="header-anchor"></a>1.1. <a href="#BIOS" class="headerlink" title="BIOS"></a>BIOS</h2><p>“Basic Input Output System”，中文名称就是”基本输入输出系统”。其实，它是一组固化到计算机内主板上一个ROM芯片上的程序，它保存着计算机最重要的基本输入输出的程序、系统设置信息、开机后自检程序和系统自启动程序。 其主要功能是为计算机提供最底层的、最直接的硬件设置和控制。</p>
 <h2 id="mbr"><a href="#mbr" class="header-anchor"></a>1.2. <a href="#MBR" class="headerlink" title="MBR"></a>MBR</h2><p>“Master Boot Record” 硬盘的物理扇区，也叫主引导记录！因为BIOS 很小无法承载启动的运行程序，所以在bios检测到一个硬盘后，将硬盘的0柱面、0磁头、1扇区的内容经过简单判断后， 至内存中的指定位置，然后跳转至这个位置，开始从这个位置运行，大小为512个byte，其中主要存放引导程序和该硬盘的分区表。</p>
 <h2 id="grub"><a href="#grub" class="header-anchor"></a>1.3. <a href="#grub" class="headerlink" title="grub"></a>grub</h2><p>“GRand Unified Bootloade” 多重操作系统启动管理器，就是运行这个GRUB之后可以通过它来引导进入其它的系统，包括window以及linux</p>
@@ -280,7 +282,7 @@ grub<span class="token operator">></span> boot
     
     <summary type="html">
     
-      &lt;p&gt;由grub引导的Linux与Windows共存的双系统环境中，Windows版本更新的时候常会出现grub引导失败，造成系统无法正常启动的问题。这是因为Windows更新的过程中导致MBR损坏导致无法找到/boot/grub部分，无法进一步引导系统。而这种情况下启动界面上会启动&lt;code&gt;grub rescue&lt;/code&gt;模式，本文即在此模式下恢复grub引导。&lt;br&gt;
+      &lt;p&gt;由grub引导的Linux与Windows共存的双系统环境中，Windows版本更新的时候常会出现grub引导失败，造成系统无法正常启动的问题。这是因为Windows更新的过程中导致MBR损坏导致无法找到/boot/grub部分，无法进一步引导系统。而这种情况下启动界面上会
     
     </summary>
     
@@ -300,7 +302,7 @@ grub<span class="token operator">></span> boot
     <published>2017-07-13T16:00:00.000Z</published>
     <updated>2017-07-24T13:03:10.440Z</updated>
     
-    <content type="html"><![CDATA[<p>对于做科研、写代码的同学来说，翻<a href="https://zh.wikipedia.org/wiki/%E9%98%B2%E7%81%AB%E9%95%BF%E5%9F%8E" target="_blank" rel="external">GFW</a>是必不可少的，对于专业的资料来说，google/sholar搜索的丰富程度可以秒某度的。梯子有很多种，例如改hosts、vpn(SoftEther)、浏览器翻墙的插件(谷歌上网助手)、自由门、GoAgent、cow、Lantern等等。今天我们来介绍一下在国外<a href="https://en.wikipedia.org/wiki/Virtual_private_server" target="_blank" rel="external">VPS</a>(Virtual private server)的搭建，不只是可以用来上google，scholar等，可以说相当于拥有了国外的网络环境，没有限制的浏览国外网站。<br><a id="more"></a></p>
+    <content type="html"><![CDATA[<p>对于做科研、写代码的同学来说，翻<a href="https://zh.wikipedia.org/wiki/%E9%98%B2%E7%81%AB%E9%95%BF%E5%9F%8E" target="_blank" rel="external">GFW</a>是必不可少的，对于专业的资料来说，google/sholar搜索的丰富程度可以秒某度的。梯子有很多种，例如改hosts、vpn(SoftEther)、浏览器翻墙的插件(谷歌上网助手)、自由门、GoAgent、cow、Lantern等等。今天我们来介绍一下在国外<a href="https://en.wikipedia.org/wiki/Virtual_private_server" target="_blank" rel="external">VPS</a>(Virtual private server)的搭建，不只是可以用来上google，scholar等，可以说相当于拥有了国外的网络环境，没有限制的浏览国外网站。<br>&lt;!--more--&gt;</p>
 <h1 id="shadowsocks-简介"><a href="#shadowsocks-简介" class="header-anchor"></a>1. <a href="#Shadowsocks__u7B80_u4ECB" class="headerlink" title="Shadowsocks 简介"></a>Shadowsocks 简介</h1><p>维基百科搬运：</p>
 <blockquote>
 <blockquote>
@@ -457,7 +459,7 @@ net.ipv4.ip_forward <span class="token operator">=</span> 1
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>其中最后的<code>hybla</code>是为高延迟网络（如美国，欧洲）准备的算法，需要内核支持，测试内核是否支持，在终端输入：<code>sysctl net.ipv4.tcp_available_congestion_control</code><br>如果结果中有<code>hybla</code>，则证明你的内核已开启<code>hybla</code>，如果没有<code>hybla</code>，可以用命令<code>modprobe tcp_hybla</code>开启。</p>
 <p>对于低延迟的网络（如日本，香港等），可以使用<code>htcp</code>，可以非常显著的提高速度，首先使用<code>modprobe tcp_htcp</code>开启，再将<code>net.ipv4.tcp_congestion_control = hybla改为net.ipv4.tcp_congestion_control = htcp</code>，建议EC2日本用户使用这个算法。</p>
-<p>使配置生效：sysctl –system<br>note: 经过手机Andoid客户端测试, 速度确实有提升（之前手机端速度感觉已经很快了！），YouTube上1080p的高清视频一点不卡，甚至于还没有缓冲到的时间点直接点击在3秒之内都可以缓冲出来（这个时候的即时速度可以到3M/s）。<img src="/images/scenery.jpg"><br>YouTube 1080p高清测试视频，<a href="https://youtu.be/6v2L2UGZJAM" target="_blank" rel="external">Planet Earth: Amazing nature scenery</a></p>
+<p>使配置生效：sysctl –system<br>note: 经过手机Andoid客户端测试, 速度确实有提升（之前手机端速度感觉已经很快了！），YouTube上1080p的高清视频一点不卡，甚至于还没有缓冲到的时间点直接点击在3秒之内都可以缓冲出来（这个时候的即时速度可以到3M/s）。&lt;img src=&quot;/images/scenery.jpg&quot;/&gt;<br>YouTube 1080p高清测试视频，<a href="https://youtu.be/6v2L2UGZJAM" target="_blank" rel="external">Planet Earth: Amazing nature scenery</a></p>
 <h4 id="tcp优化"><a href="#tcp优化" class="header-anchor"></a>2.2.4.2. <a href="#TCP_u4F18_u5316" class="headerlink" title="TCP优化"></a>TCP优化</h4><p>1.修改文件句柄数限制<br>如果是ubuntu/centos均可修改/etc/sysctl.d/local.conf<br>找到fs.file-max这一行，修改其值为1024000，并保存退出。然后执行<code>sysctl -p</code>使其生效<br>修改vi /etc/security/limits.conf文件，加入</p>
 <pre class="line-numbers language-bash"><code class="language-bash">*               soft    nofile           512000
 *               hard    nofile          1024000
@@ -480,7 +482,7 @@ net.ipv4.ip_forward <span class="token operator">=</span> 1
     
     <summary type="html">
     
-      &lt;p&gt;对于做科研、写代码的同学来说，翻&lt;a href=&quot;https://zh.wikipedia.org/wiki/%E9%98%B2%E7%81%AB%E9%95%BF%E5%9F%8E&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;GFW&lt;/a&gt;是必不可少的，对于专业的资料来说，google/sholar搜索的丰富程度可以秒某度的。梯子有很多种，例如改hosts、vpn(SoftEther)、浏览器翻墙的插件(谷歌上网助手)、自由门、GoAgent、cow、Lantern等等。今天我们来介绍一下在国外&lt;a href=&quot;https://en.wikipedia.org/wiki/Virtual_private_server&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;VPS&lt;/a&gt;(Virtual private server)的搭建，不只是可以用来上google，scholar等，可以说相当于拥有了国外的网络环境，没有限制的浏览国外网站。&lt;br&gt;
+      &lt;p&gt;对于做科研、写代码的同学来说，翻&lt;a href=&quot;https://zh.wikipedia.org/wiki/%E9%98%B2%E7%81%AB%E9%95%BF%E5%9F%8E&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;GFW&lt;/a&gt;是必不可少的
     
     </summary>
     
@@ -498,7 +500,7 @@ net.ipv4.ip_forward <span class="token operator">=</span> 1
     <published>2017-07-13T11:40:00.000Z</published>
     <updated>2017-07-24T13:00:34.645Z</updated>
     
-    <content type="html"><![CDATA[<p>Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。本文为Hexo相关的东西，大部分与特性配置有关。<br><a id="more"></a></p>
+    <content type="html"><![CDATA[<p>Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。本文为Hexo相关的东西，大部分与特性配置有关。<br>&lt;!--more--&gt;</p>
 <h1 id="特性配置"><a href="#特性配置" class="header-anchor"></a>1. <a href="#u7279_u6027_u914D_u7F6E" class="headerlink" title="特性配置"></a>特性配置</h1><h2 id="添加邮箱链接控制"><a href="#添加邮箱链接控制" class="header-anchor"></a>1.1. <a href="#u6DFB_u52A0_u90AE_u7BB1_u94FE_u63A5_u63A7_u5236" class="headerlink" title="添加邮箱链接控制"></a>添加邮箱链接控制</h2><p>安装插件<code>hexo-email-obfuscate</code>，参考<a href="https://www.npmjs.com/package/hexo-email-obfuscate" target="_blank" rel="external">这里</a></p>
 <pre class="line-numbers language-sh"><code class="language-sh">npm install hexo-email-obfuscate --save
 <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
@@ -782,9 +784,9 @@ $content-desktop-large = <span class="token number">900</span>px
 <li>首先注册disques账号<br><a href="https://disqus.com" target="_blank" rel="external">https://disqus.com</a> 获取shortname</li>
 <li>next主题内置了对disqus的支持，在next主题的_config_xml中搜索disqus，并做如下配置：<pre class="line-numbers language-css"><code class="language-css"># disqus
 <span class="token property">disqus</span><span class="token punctuation">:</span>
- <span class="token property">enable</span><span class="token punctuation">:</span> True
- <span class="token property">shortname</span><span class="token punctuation">:</span> jiaxm-me
- <span class="token property">count</span><span class="token punctuation">:</span> true
+<span class="token property">enable</span><span class="token punctuation">:</span> True
+<span class="token property">shortname</span><span class="token punctuation">:</span> jiaxm-me
+<span class="token property">count</span><span class="token punctuation">:</span> true
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 </li>
 </ol>
@@ -845,7 +847,8 @@ $content-desktop-large = <span class="token number">900</span>px
     
     <summary type="html">
     
-      &lt;p&gt;Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。本文为Hexo相关的东西，大部分与特性配置有关。&lt;br&gt;
+      &lt;p&gt;Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。本文为Hexo相关的东西，大部分与特性配置有关。&lt;br&gt;&amp;lt;!--more--&amp;gt;&lt;/p&gt;
+&lt;h1 id=&quot;特性配置&quot;&gt;
     
     </summary>
     
@@ -866,13 +869,14 @@ $content-desktop-large = <span class="token number">900</span>px
     <updated>2017-07-22T15:33:23.429Z</updated>
     
     <content type="html"><![CDATA[<p>note: 这些快捷键在xshell5环境下适用<br>在shell命令终端中，Ctrl+n相当于方向向下的方向键，Ctrl+p相当于方向向上的方向键。<br>在命令终端中通过它们或者方向键可以实现对历史命令的快速查找。这也是快速输入命令的技巧。<br>在命令终端中可以通过Ctrl+r 实现快速检索使用过的历史命令。Ctrl+r中r是retrieve中r。</p>
-<a id="more"></a>
+<p>&lt;!--more--&gt;
+</p>
 <p>Ctrl+a：光标回到命令行首。 （a：ahead）<br>Ctrl+e：光标回到命令行尾。 （e：end）<br>Ctrl+b：光标向行首移动一个字符。 （b：backwards）<br>Ctrl+ f：光标向行尾移动一个字符。 （f：forwards）<br>Ctrl+w: 删除光标处到行首的字符。<br>Ctrl+k：删除光标处到行尾的字符。<br>Ctrl+u：删除整个命令行文本字符。<br>Ctrl+h：向行首删除一个字符。<br>Ctrl+d：向行尾删除一个字符。<br>Ctrl+y:：粘贴Ctrl+u，Ctrl+k，Ctrl+w删除的文本。<br>Ctrl+p: 上一个使用的历史命令。 （p：previous）<br>Ctrl+n： 下一个使用的历史命令。（n：next ）<br>Ctrl+r：快速检索历史命令。（r：retrieve）。<br>Ctrl+t： 交换光标所在字符和其前的字符。<br>Ctrl+i：相当于Tab键。<br>Ctrl+o：相当于Ctrl+m.<br>Ctrl+m：相当Enter键。<br>其他控制键：<br>Ctrl+s:使终端发呆，静止，可以使快速输出的终端屏幕停下来。<br>Ctrl+q：退出Ctrl+s引起的发呆。<br>Ctrl+z：使正在运行在终端的任务，运行于后台。 （可用fg恢复）<br>Ctrl+c：中断终端中正在执行的任务。<br>Ctrl+d: 在空命令行的情况下可以退出终端。<br>Ctrl+[ ：相当于Esc键。<br>Esc键：连续按3次显示所有的支持的终端命令。<br>Tab键：命令、文件名等自动补全功能。</p>
 ]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;note: 这些快捷键在xshell5环境下适用&lt;br&gt;在shell命令终端中，Ctrl+n相当于方向向下的方向键，Ctrl+p相当于方向向上的方向键。&lt;br&gt;在命令终端中通过它们或者方向键可以实现对历史命令的快速查找。这也是快速输入命令的技巧。&lt;br&gt;在命令终端中可以通过Ctrl+r 实现快速检索使用过的历史命令。Ctrl+r中r是retrieve中r。&lt;/p&gt;
+      &lt;p&gt;note: 这些快捷键在xshell5环境下适用&lt;br&gt;在shell命令终端中，Ctrl+n相当于方向向下的方向键，Ctrl+p相当于方向向上的方向键。&lt;br&gt;在命令终端中通过它们或者方向键可以实现对历史命令的快速查找。这也是快速输入命令的技巧。&lt;br&gt;在命令终端中可以通过
     
     </summary>
     
@@ -890,7 +894,7 @@ $content-desktop-large = <span class="token number">900</span>px
     <published>2017-07-04T04:00:04.000Z</published>
     <updated>2017-07-24T13:02:42.479Z</updated>
     
-    <content type="html"><![CDATA[<p>VPS（Virtual Private Server 虚拟专用服务器）技术，将一台服务器分割成多个虚拟专享服务器的优质服务。简单的说，VPS就是一台拥有公网IP的服务器总结一下VPS搭建的过程，从域名的购买到VPS的设置<br><a id="more"></a></p>
+    <content type="html"><![CDATA[<p>VPS（Virtual Private Server 虚拟专用服务器）技术，将一台服务器分割成多个虚拟专享服务器的优质服务。简单的说，VPS就是一台拥有公网IP的服务器总结一下VPS搭建的过程，从域名的购买到VPS的设置<br>&lt;!--more--&gt;</p>
 <h1 id="vps的配置"><a href="#vps的配置" class="header-anchor"></a>1. <a href="#VPS_u7684_u914D_u7F6E" class="headerlink" title="VPS的配置"></a>VPS的配置</h1><h2 id="vps的购买-tbd"><a href="#vps的购买-tbd" class="header-anchor"></a>1.1. <a href="#VPS_u7684_u8D2D_u4E70_TBD" class="headerlink" title="VPS的购买 TBD"></a>VPS的购买 TBD</h2><h2 id="vps在ubuntu-1704下的软件配置"><a href="#vps在ubuntu-1704下的软件配置" class="header-anchor"></a>1.2. <a href="#VPS_u5728ubuntu_17-04_u4E0B_u7684_u8F6F_u4EF6_u914D_u7F6E" class="headerlink" title="VPS在ubuntu 17.04下的软件配置"></a>VPS在ubuntu 17.04下的软件配置</h2><pre class="line-numbers language-bash"><code class="language-bash">$ <span class="token function">apt-get</span> update <span class="token operator">&amp;&amp;</span> <span class="token function">apt-get</span> upgrade
 $ <span class="token function">apt-get</span> <span class="token function">install</span> <span class="token function">git</span> git-core
 $ curl -sL https://deb.nodesource.com/setup_6.x <span class="token operator">|</span> <span class="token function">sudo</span> -E <span class="token function">bash</span> -
@@ -909,7 +913,8 @@ $ <span class="token function">apt-get</span> <span class="token function">insta
     
     <summary type="html">
     
-      &lt;p&gt;VPS（Virtual Private Server 虚拟专用服务器）技术，将一台服务器分割成多个虚拟专享服务器的优质服务。简单的说，VPS就是一台拥有公网IP的服务器总结一下VPS搭建的过程，从域名的购买到VPS的设置&lt;br&gt;
+      &lt;p&gt;VPS（Virtual Private Server 虚拟专用服务器）技术，将一台服务器分割成多个虚拟专享服务器的优质服务。简单的说，VPS就是一台拥有公网IP的服务器总结一下VPS搭建的过程，从域名的购买到VPS的设置&lt;br&gt;&amp;lt;!--more--&amp;gt;&lt;/p&gt;
+&lt;
     
     </summary>
     
@@ -927,7 +932,7 @@ $ <span class="token function">apt-get</span> <span class="token function">insta
     <published>2017-07-02T06:36:06.000Z</published>
     <updated>2017-07-23T13:26:54.477Z</updated>
     
-    <content type="html"><![CDATA[<p>在windows上默认以gbk编码。保存一个文件到本地，会被改成gbk的编码，即使在输出内容在写入到文件前已经做了utf-8的编码，最后还是会被转成gbk编码。<br>本例中就是从糗百上抓的文本，其本身是utf-8编码的。读取的时候encode用gbk，输出用gbk。既然最后一定要用gbk，那前面就不可以用utf-8来encode，否则会报错，i.e.，有些字符找不到对应的编码。<br><a id="more"></a></p>
+    <content type="html"><![CDATA[<p>在windows上默认以gbk编码。保存一个文件到本地，会被改成gbk的编码，即使在输出内容在写入到文件前已经做了utf-8的编码，最后还是会被转成gbk编码。<br>本例中就是从糗百上抓的文本，其本身是utf-8编码的。读取的时候encode用gbk，输出用gbk。既然最后一定要用gbk，那前面就不可以用utf-8来encode，否则会报错，i.e.，有些字符找不到对应的编码。<br>&lt;!--more--&gt;</p>
 <h1 id="python3-学习爬虫遇到的一点编码问题"><a href="#python3-学习爬虫遇到的一点编码问题" class="header-anchor"></a>1. <a href="#python3__u5B66_u4E60_u722C_u866B_u9047_u5230_u7684_u4E00_u70B9_u7F16_u7801_u95EE_u9898" class="headerlink" title="python3 学习爬虫遇到的一点编码问题"></a>python3 学习爬虫遇到的一点编码问题</h1><h2 id="上解决代码"><a href="#上解决代码" class="header-anchor"></a>1.1. <a href="#u4E0A_u89E3_u51B3_u4EE3_u7801_uFF1A" class="headerlink" title="上解决代码："></a>上解决代码：</h2><pre class="line-numbers language-python"><code class="language-python"><span class="token comment" spellcheck="true">#coding='utf-8'</span>
 <span class="token keyword">import</span> chardet
 <span class="token keyword">import</span> requests<span class="token punctuation">,</span> re<span class="token punctuation">,</span> sys
@@ -962,7 +967,7 @@ fout <span class="token operator">=</span> open<span class="token punctuation">(
     
     <summary type="html">
     
-      &lt;p&gt;在windows上默认以gbk编码。保存一个文件到本地，会被改成gbk的编码，即使在输出内容在写入到文件前已经做了utf-8的编码，最后还是会被转成gbk编码。&lt;br&gt;本例中就是从糗百上抓的文本，其本身是utf-8编码的。读取的时候encode用gbk，输出用gbk。既然最后一定要用gbk，那前面就不可以用utf-8来encode，否则会报错，i.e.，有些字符找不到对应的编码。&lt;br&gt;
+      &lt;p&gt;在windows上默认以gbk编码。保存一个文件到本地，会被改成gbk的编码，即使在输出内容在写入到文件前已经做了utf-8的编码，最后还是会被转成gbk编码。&lt;br&gt;本例中就是从糗百上抓的文本，其本身是utf-8编码的。读取的时候encode用gbk，输出用gbk。既然最
     
     </summary>
     
