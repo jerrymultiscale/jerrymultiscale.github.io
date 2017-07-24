@@ -3,6 +3,28 @@
 
 
     
+  <url>
+    <loc>http://www.jiaxm.me/2017-07-day/Hexo%20Configuration/</loc>
+    <lastmod>2017-07-24T13:00:34.645Z</lastmod>
+    <data>
+        <display>
+        <title>Hexo Configuration</title>
+        <pubTime>2017-07-13T11:40:00.000Z</pubTime>
+        
+        <tag>next</tag>
+         
+        <tag>hexo</tag>
+         
+         
+           
+             
+              <breadCrumb title="hexo" url="http://www.jiaxm.me/categories/hexo/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
     
   <url>
     <loc>http://www.jiaxm.me/2017-07-day/python_code/</loc>
@@ -40,28 +62,6 @@
          
          
            
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.jiaxm.me/2017-07-day/Hexo%20Configuration/</loc>
-    <lastmod>2017-07-23T12:09:53.595Z</lastmod>
-    <data>
-        <display>
-        <title>Hexo Configuration</title>
-        <pubTime>2017-07-13T11:40:00.000Z</pubTime>
-        
-        <tag>next</tag>
-         
-        <tag>hexo</tag>
-         
-         
-           
-             
-              <breadCrumb title="hexo" url="http://www.jiaxm.me/categories/hexo/"/>
-          
         </display>
     </data>
     </url>
