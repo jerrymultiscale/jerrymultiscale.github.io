@@ -120,10 +120,12 @@
 <meta property="og:site_name" content="Memories">
 <meta property="og:description" content="对于做科研、写代码的同学来说，翻GFW是必不可少的，对于专业的资料来说，google/sholar搜索的丰富程度可以秒某度的。梯子有很多种，例如改hosts、vpn(SoftEther)、浏览器翻墙的插件(谷歌上网助手)、自由门、GoAgent、cow、Lantern等等。今天我们来介绍一下在国外VPS(Virtual private server)的搭建，不只是可以用来上google，schol">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://www.jiaxm.me/images/scenery.jpg">
 <meta property="og:updated_time" content="2017-07-24T13:03:10.440Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Shadowsocks 的搭建">
 <meta name="twitter:description" content="对于做科研、写代码的同学来说，翻GFW是必不可少的，对于专业的资料来说，google/sholar搜索的丰富程度可以秒某度的。梯子有很多种，例如改hosts、vpn(SoftEther)、浏览器翻墙的插件(谷歌上网助手)、自由门、GoAgent、cow、Lantern等等。今天我们来介绍一下在国外VPS(Virtual private server)的搭建，不只是可以用来上google，schol">
+<meta name="twitter:image" content="http://www.jiaxm.me/images/scenery.jpg">
 
 
 
@@ -440,139 +442,181 @@
       
 
       
-        <p>对于做科研、写代码的同学来说，翻<a href="https://zh.wikipedia.org/wiki/%E9%98%B2%E7%81%AB%E9%95%BF%E5%9F%8E" target="_blank" rel="external">GFW</a>是必不可少的，对于专业的资料来说，google/sholar搜索的丰富程度可以秒某度的。梯子有很多种，例如改hosts、vpn(SoftEther)、浏览器翻墙的插件(谷歌上网助手)、自由门、GoAgent、cow、Lantern等等。今天我们来介绍一下在国外<a href="https://en.wikipedia.org/wiki/Virtual_private_server" target="_blank" rel="external">VPS</a>(Virtual private server)的搭建，不只是可以用来上google，scholar等，可以说相当于拥有了国外的网络环境，没有限制的浏览国外网站。
-&lt;!--more--&gt;</p>
+        <p>对于做科研、写代码的同学来说，翻<a href="https://zh.wikipedia.org/wiki/%E9%98%B2%E7%81%AB%E9%95%BF%E5%9F%8E" target="_blank" rel="external">GFW</a>是必不可少的，对于专业的资料来说，google/sholar搜索的丰富程度可以秒某度的。梯子有很多种，例如改hosts、vpn(SoftEther)、浏览器翻墙的插件(谷歌上网助手)、自由门、GoAgent、cow、Lantern等等。今天我们来介绍一下在国外<a href="https://en.wikipedia.org/wiki/Virtual_private_server" target="_blank" rel="external">VPS</a>(Virtual private server)的搭建，不只是可以用来上google，scholar等，可以说相当于拥有了国外的网络环境，没有限制的浏览国外网站。<br><a id="more"></a></p>
 <h1 id="shadowsocks-简介"><a href="#shadowsocks-简介" class="header-anchor"></a>1. <a href="#Shadowsocks__u7B80_u4ECB" class="headerlink" title="Shadowsocks 简介"></a>Shadowsocks 简介</h1><p>维基百科搬运：</p>
 <blockquote>
 <blockquote>
-<p>Shadowsocks (以下简称“ss”) 是一种基于Sock5代理方式的网络资料加密传输工具，分为服务器端和客户端。使用之前，需先将服务器端部署到服务器上面，然后通过客户端连接并建立本地代理。
-ss的运行原理与其他代理工具基本相同，使用特定的中转服务器完成数据传输。在服务器端部署完成后，用户需要按照指定的密码、加密方式和端口使用客户端软件与其连接。在成功连接到服务器后，客户端会在用户的电脑上构建一个本地Socks5代理。浏览网络时，网络流量会被分到本地socks5代理，客户端将其加密之后发送到服务器，服务器以同样的加密方式将流量回传给客户端，以此实现代理上网。ss的创建者<a href="http://github.com/clowwindy" target="_blank" rel="external">clowwindy</a>是中国人，15年8月22日受到一些外部压力，宣布停止维护此计划（项目）并移除其个人页面所存储的源代码，</p>
+<p>Shadowsocks (以下简称“ss”) 是一种基于Sock5代理方式的网络资料加密传输工具，分为服务器端和客户端。使用之前，需先将服务器端部署到服务器上面，然后通过客户端连接并建立本地代理。<br>ss的运行原理与其他代理工具基本相同，使用特定的中转服务器完成数据传输。在服务器端部署完成后，用户需要按照指定的密码、加密方式和端口使用客户端软件与其连接。在成功连接到服务器后，客户端会在用户的电脑上构建一个本地Socks5代理。浏览网络时，网络流量会被分到本地socks5代理，客户端将其加密之后发送到服务器，服务器以同样的加密方式将流量回传给客户端，以此实现代理上网。ss的创建者<a href="http://github.com/clowwindy" target="_blank" rel="external">clowwindy</a>是中国人，15年8月22日受到一些外部压力，宣布停止维护此计划（项目）并移除其个人页面所存储的源代码，</p>
 </blockquote>
 </blockquote>
 <p>详细News请移步<a href="https://zh.wikipedia.org/wiki/Shadowsocks" target="_blank" rel="external">维基百科</a>。</p>
-<h1 id="ss-搭建"><a href="#ss-搭建" class="header-anchor"></a>2. <a href="#ss__u642D_u5EFA" class="headerlink" title="ss 搭建"></a>ss 搭建</h1><p>详细的搭建步骤有点琐碎，故分列几条。
-1. 安装 Shadowsocks
-2. server端配置
-4. Windows客户端配置
-5. Android客户端配置</p>
-<h2 id="安装-ss"><a href="#安装-ss" class="header-anchor"></a>2.1. <a href="#u5B89_u88C5_ss" class="headerlink" title="安装 ss"></a>安装 ss</h2><p>以Ubuntu 17.04为例。
-<code>bash
-sudo apt-get update # 升级下
-sudo apt-get install python-pip
-sudo pip install shadowsocks # 安装ss
-sudo apt–get install python–m2crypto # 用以支持加密方式</code></p>
+<h1 id="ss-搭建"><a href="#ss-搭建" class="header-anchor"></a>2. <a href="#ss__u642D_u5EFA" class="headerlink" title="ss 搭建"></a>ss 搭建</h1><p>详细的搭建步骤有点琐碎，故分列几条。</p>
+<ol>
+<li>安装 Shadowsocks</li>
+<li>server端配置</li>
+<li>Windows客户端配置</li>
+<li>Android客户端配置</li>
+</ol>
+<h2 id="安装-ss"><a href="#安装-ss" class="header-anchor"></a>2.1. <a href="#u5B89_u88C5_ss" class="headerlink" title="安装 ss"></a>安装 ss</h2><p>以Ubuntu 17.04为例。</p>
+<pre class="line-numbers language-bash"><code class="language-bash"><span class="token function">sudo</span> <span class="token function">apt-get</span> update <span class="token comment" spellcheck="true"># 升级下</span>
+<span class="token function">sudo</span> <span class="token function">apt-get</span> <span class="token function">install</span> python-pip
+<span class="token function">sudo</span> pip <span class="token function">install</span> shadowsocks <span class="token comment" spellcheck="true"># 安装ss</span>
+<span class="token function">sudo</span> apt–get <span class="token function">install</span> python–m2crypto <span class="token comment" spellcheck="true"># 用以支持加密方式</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 <h2 id="server端配置-ss"><a href="#server端配置-ss" class="header-anchor"></a>2.2. <a href="#server_u7AEF_u914D_u7F6E_ss" class="headerlink" title="server端配置 ss"></a>server端配置 ss</h2><h3 id="即时启动"><a href="#即时启动" class="header-anchor"></a>2.2.1. <a href="#u5373_u65F6_u542F_u52A8_uFF1A" class="headerlink" title="即时启动："></a>即时启动：</h3><p><code>sudo ssserver -p 8388 -k password -m rc4-md5 -d start</code></p>
-<h3 id="使用配置文件启动"><a href="#使用配置文件启动" class="header-anchor"></a>2.2.2. <a href="#u4F7F_u7528_u914D_u7F6E_u6587_u4EF6_u542F_u52A8_uFF1A" class="headerlink" title="使用配置文件启动："></a>使用配置文件启动：</h3><p>编辑/etc/shadowsocks/config.json文件（如果没有可以创建此文件）
-<code>json
-{
-&quot;server&quot;:&quot;my_server_ip&quot;,
-&quot;server_port&quot;:8388,
-&quot;local_address&quot;: &quot;127.0.0.1&quot;,
-&quot;local_port&quot;:1080,
-&quot;password&quot;:&quot;mypassword&quot;,
-&quot;timeout&quot;:300,
-&quot;method&quot;:&quot;rc4-md5&quot;
-}</code>
-字段含义：</p>
-<p>字段 | 含义<br>———— | ————-
-server | 服务器 IP (IPv4/IPv6)
-server_port | 服务器端口
-local_port | 本地端端口
-password | 密码
-timeout | 超时时间(s)
-method | 加密方法， 可选“bf-cfb”, “aes-256-cfb”, “rc4-md5”,等</p>
+<h3 id="使用配置文件启动"><a href="#使用配置文件启动" class="header-anchor"></a>2.2.2. <a href="#u4F7F_u7528_u914D_u7F6E_u6587_u4EF6_u542F_u52A8_uFF1A" class="headerlink" title="使用配置文件启动："></a>使用配置文件启动：</h3><p>编辑/etc/shadowsocks/config.json文件（如果没有可以创建此文件）</p>
+<pre class="line-numbers language-json"><code class="language-json"><span class="token punctuation">{</span>
+<span class="token property">"server"</span><span class="token operator">:</span><span class="token string">"my_server_ip"</span><span class="token punctuation">,</span>
+<span class="token property">"server_port"</span><span class="token operator">:</span><span class="token number">8388</span><span class="token punctuation">,</span>
+<span class="token property">"local_address"</span><span class="token operator">:</span> <span class="token string">"127.0.0.1"</span><span class="token punctuation">,</span>
+<span class="token property">"local_port"</span><span class="token operator">:</span><span class="token number">1080</span><span class="token punctuation">,</span>
+<span class="token property">"password"</span><span class="token operator">:</span><span class="token string">"mypassword"</span><span class="token punctuation">,</span>
+<span class="token property">"timeout"</span><span class="token operator">:</span><span class="token number">300</span><span class="token punctuation">,</span>
+<span class="token property">"method"</span><span class="token operator">:</span><span class="token string">"rc4-md5"</span>
+<span class="token punctuation">}</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>字段含义：</p>
+<table>
+<thead>
+<tr>
+<th>字段</th>
+<th>含义  </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>server</td>
+<td>服务器 IP (IPv4/IPv6)</td>
+</tr>
+<tr>
+<td>server_port</td>
+<td>服务器端口</td>
+</tr>
+<tr>
+<td>local_port</td>
+<td>本地端端口</td>
+</tr>
+<tr>
+<td>password</td>
+<td>密码</td>
+</tr>
+<tr>
+<td>timeout</td>
+<td>超时时间(s)</td>
+</tr>
+<tr>
+<td>method</td>
+<td>加密方法， 可选“bf-cfb”, “aes-256-cfb”, “rc4-md5”,等</td>
+</tr>
+</tbody>
+</table>
 <blockquote>
 <p>加密方式推荐使用rc4-md5，因为 RC4 比 AES 速度快好几倍，如果用在路由器上会带来显著性能提升。旧的 RC4 加密之所以不安全是因为 Shadowsocks 在每个连接上重复使用 key，没有使用 IV。现在已经重新正确实现，可以放心使用。</p>
 </blockquote>
-<p>config.json文件创建完毕后，赋予755权限
-<code>sudo chmod 755 /etc/shadowsocks/config.json</code>
-使用配置文件，后台运行：
-<code>sudo ssserver -c /etc/shadowsocks/config.json -d start</code></p>
-<h3 id="开机启动"><a href="#开机启动" class="header-anchor"></a>2.2.3. <a href="#u5F00_u673A_u542F_u52A8" class="headerlink" title="开机启动"></a>开机启动</h3><p>上述两种方法都是在机器没有重启的情况下用的，每次重启后都手动去开启ss服务有点麻烦，所以设置开机启动可以省点事。
-创建 /etc/init.d/shadowsocks 文件 <code>sudo vim /etc/init.d/shadowsocks</code>
-添加以下内容：
-```bash</p>
-<h1 id="binsh"><a href="#binsh" class="header-anchor"></a>3.2. <a href="#21/bin/sh" class="headerlink" title="!/bin/sh"></a>!/bin/sh</h1><h3 id="begin-init-info"><a href="#begin-init-info" class="header-anchor"></a>3.2.1. <a href="#BEGIN_INIT_INFO" class="headerlink" title="BEGIN INIT INFO"></a>BEGIN INIT INFO</h3><h1 id="provides-shadowsocks"><a href="#provides-shadowsocks" class="header-anchor"></a>4.2. <a href="#Provides_3A_shadowsocks" class="headerlink" title="Provides:          shadowsocks"></a>Provides:          shadowsocks</h1><h1 id="required-start-remote_fs-syslog"><a href="#required-start-remote_fs-syslog" class="header-anchor"></a>5.2. <a href="#Required-Start_3A__24remote_fs__24syslog" class="headerlink" title="Required-Start:    $remote_fs $syslog"></a>Required-Start:    $remote_fs $syslog</h1><h1 id="required-stop-remote_fs-syslog"><a href="#required-stop-remote_fs-syslog" class="header-anchor"></a>6.2. <a href="#Required-Stop_3A__24remote_fs__24syslog" class="headerlink" title="Required-Stop:     $remote_fs $syslog"></a>Required-Stop:     $remote_fs $syslog</h1><h1 id="default-start-2-3-4-5"><a href="#default-start-2-3-4-5" class="header-anchor"></a>7.2. <a href="#Default-Start_3A_2_3_4_5" class="headerlink" title="Default-Start:     2 3 4 5"></a>Default-Start:     2 3 4 5</h1><h1 id="default-stop-0-1-6"><a href="#default-stop-0-1-6" class="header-anchor"></a>8.2. <a href="#Default-Stop_3A_0_1_6" class="headerlink" title="Default-Stop:      0 1 6"></a>Default-Stop:      0 1 6</h1><h1 id="short-description-start-shadowsocks"><a href="#short-description-start-shadowsocks" class="header-anchor"></a>9.2. <a href="#Short-Description_3A_start_shadowsocks" class="headerlink" title="Short-Description: start shadowsocks"></a>Short-Description: start shadowsocks</h1><h1 id="description-start-shadowsocks"><a href="#description-start-shadowsocks" class="header-anchor"></a>10.2. <a href="#Description_3A_start_shadowsocks" class="headerlink" title="Description:       start shadowsocks"></a>Description:       start shadowsocks</h1><h3 id="end-init-info"><a href="#end-init-info" class="header-anchor"></a>10.2.1. <a href="#END_INIT_INFO" class="headerlink" title="END INIT INFO"></a>END INIT INFO</h3><p>start(){
+<p>config.json文件创建完毕后，赋予755权限<br><code>sudo chmod 755 /etc/shadowsocks/config.json</code><br>使用配置文件，后台运行：<br><code>sudo ssserver -c /etc/shadowsocks/config.json -d start</code></p>
+<h3 id="开机启动"><a href="#开机启动" class="header-anchor"></a>2.2.3. <a href="#u5F00_u673A_u542F_u52A8" class="headerlink" title="开机启动"></a>开机启动</h3><p>上述两种方法都是在机器没有重启的情况下用的，每次重启后都手动去开启ss服务有点麻烦，所以设置开机启动可以省点事。<br>创建 /etc/init.d/shadowsocks 文件 <code>sudo vim /etc/init.d/shadowsocks</code><br>添加以下内容：</p>
+<pre class="line-numbers language-bash"><code class="language-bash"><span class="token shebang important">#!/bin/sh</span>
+<span class="token comment" spellcheck="true">### BEGIN INIT INFO</span>
+<span class="token comment" spellcheck="true"># Provides:          shadowsocks</span>
+<span class="token comment" spellcheck="true"># Required-Start:    $remote_fs $syslog</span>
+<span class="token comment" spellcheck="true"># Required-Stop:     $remote_fs $syslog</span>
+<span class="token comment" spellcheck="true"># Default-Start:     2 3 4 5</span>
+<span class="token comment" spellcheck="true"># Default-Stop:      0 1 6</span>
+<span class="token comment" spellcheck="true"># Short-Description: start shadowsocks</span>
+<span class="token comment" spellcheck="true"># Description:       start shadowsocks</span>
+<span class="token comment" spellcheck="true">### END INIT INFO</span>
+
+start<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
     ssserver -c /etc/shadowsocks/config.json -d start
-}</p>
-<p>stop(){
+<span class="token punctuation">}</span>
+
+stop<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
     ssserver -c /etc/shadowsocks/config.json -d stop
-}</p>
-<p>case “$1” in
-start)
+<span class="token punctuation">}</span>
+
+<span class="token keyword">case</span> <span class="token string">"<span class="token variable">$1</span>"</span> <span class="token keyword">in</span>
+start<span class="token punctuation">)</span>
     start
-    ;;
-stop)
+    <span class="token punctuation">;</span><span class="token punctuation">;</span>
+stop<span class="token punctuation">)</span>
     stop
-    ;;
-reload)
+    <span class="token punctuation">;</span><span class="token punctuation">;</span>
+reload<span class="token punctuation">)</span>
      stop
      start
-     ;;
-*)
-    echo “Usage: $0 {start|reload|stop}”
-    exit 1
-    ;;
+     <span class="token punctuation">;</span><span class="token punctuation">;</span>
+*<span class="token punctuation">)</span>
+    <span class="token keyword">echo</span> <span class="token string">"Usage: <span class="token variable">$0</span> {start|reload|stop}"</span>
+    <span class="token keyword">exit</span> 1
+    <span class="token punctuation">;</span><span class="token punctuation">;</span>
 esac
-<code>``
-增加这个文件的可执行权限</code>sudo chmod +x /etc/init.d/shadowsocks<code>在rc.d中新增</code>sudo update-rc.d shadowsocks defaults<code>，添加到开机启动中
-以后就可以通过</code>sudo service shadowsocks {start|reload|stop}`来管理了。</p>
-<h3 id="ss-速度优化"><a href="#ss-速度优化" class="header-anchor"></a>10.2.2. <a href="#ss__u901F_u5EA6_u4F18_u5316" class="headerlink" title="ss 速度优化"></a>ss 速度优化</h3><p>基于kvm架构vps的优化
-这方面SS给出了非常详尽的优化指南，主要有：优化内核参数，开启TCP Fast Open
-这里只给出优化内核参数/优化加密方式的方法。更多、更详细的策略方法请参考<a href="https://github.com/iMeiji/shadowsocks_install/wiki/shadowsocks-optimize" target="_blank" rel="external">shadowsocks optimize</a></p>
-<h4 id="内核参数优化"><a href="#内核参数优化" class="header-anchor"></a>10.2.2.1. <a href="#u5185_u6838_u53C2_u6570_u4F18_u5316" class="headerlink" title="内核参数优化"></a>内核参数优化</h4><p>创建 /etc/sysctl.d/local.conf 并写入
-```bash</p>
-<h1 id="max-open-files"><a href="#max-open-files" class="header-anchor"></a>11.2.2. <a href="#max_open_files" class="headerlink" title="max open files"></a>max open files</h1><p>fs.file-max = 1024000</p>
-<h1 id="max-read-buffer"><a href="#max-read-buffer" class="header-anchor"></a>12.2.2. <a href="#max_read_buffer" class="headerlink" title="max read buffer"></a>max read buffer</h1><p>net.core.rmem_max = 67108864</p>
-<h1 id="max-write-buffer"><a href="#max-write-buffer" class="header-anchor"></a>13.2.2. <a href="#max_write_buffer" class="headerlink" title="max write buffer"></a>max write buffer</h1><p>net.core.wmem_max = 67108864</p>
-<h1 id="default-read-buffer"><a href="#default-read-buffer" class="header-anchor"></a>14.2.2. <a href="#default_read_buffer" class="headerlink" title="default read buffer"></a>default read buffer</h1><p>net.core.rmem_default = 65536</p>
-<h1 id="default-write-buffer"><a href="#default-write-buffer" class="header-anchor"></a>15.2.2. <a href="#default_write_buffer" class="headerlink" title="default write buffer"></a>default write buffer</h1><p>net.core.wmem_default = 65536</p>
-<h1 id="max-processor-input-queue"><a href="#max-processor-input-queue" class="header-anchor"></a>16.2.2. <a href="#max_processor_input_queue" class="headerlink" title="max processor input queue"></a>max processor input queue</h1><p>net.core.netdev_max_backlog = 4096</p>
-<h1 id="max-backlog"><a href="#max-backlog" class="header-anchor"></a>17.2.2. <a href="#max_backlog" class="headerlink" title="max backlog"></a>max backlog</h1><p>net.core.somaxconn = 4096</p>
-<h1 id="resist-syn-flood-attacks"><a href="#resist-syn-flood-attacks" class="header-anchor"></a>18.2.2. <a href="#resist_SYN_flood_attacks" class="headerlink" title="resist SYN flood attacks"></a>resist SYN flood attacks</h1><p>net.ipv4.tcp_syncookies = 1</p>
-<h1 id="reuse-timewait-sockets-when-safe"><a href="#reuse-timewait-sockets-when-safe" class="header-anchor"></a>19.2.2. <a href="#reuse_timewait_sockets_when_safe" class="headerlink" title="reuse timewait sockets when safe"></a>reuse timewait sockets when safe</h1><p>net.ipv4.tcp_tw_reuse = 1</p>
-<h1 id="turn-off-fast-timewait-sockets-recycling"><a href="#turn-off-fast-timewait-sockets-recycling" class="header-anchor"></a>20.2.2. <a href="#turn_off_fast_timewait_sockets_recycling" class="headerlink" title="turn off fast timewait sockets recycling"></a>turn off fast timewait sockets recycling</h1><p>net.ipv4.tcp_tw_recycle = 0</p>
-<h1 id="short-fin-timeout"><a href="#short-fin-timeout" class="header-anchor"></a>21.2.2. <a href="#short_FIN_timeout" class="headerlink" title="short FIN timeout"></a>short FIN timeout</h1><p>net.ipv4.tcp_fin_timeout = 30</p>
-<h1 id="short-keepalive-time"><a href="#short-keepalive-time" class="header-anchor"></a>22.2.2. <a href="#short_keepalive_time" class="headerlink" title="short keepalive time"></a>short keepalive time</h1><p>net.ipv4.tcp_keepalive_time = 1200</p>
-<h1 id="outbound-port-range"><a href="#outbound-port-range" class="header-anchor"></a>23.2.2. <a href="#outbound_port_range" class="headerlink" title="outbound port range"></a>outbound port range</h1><p>net.ipv4.ip_local_port_range = 10000 65000</p>
-<h1 id="max-syn-backlog"><a href="#max-syn-backlog" class="header-anchor"></a>24.2.2. <a href="#max_SYN_backlog" class="headerlink" title="max SYN backlog"></a>max SYN backlog</h1><p>net.ipv4.tcp_max_syn_backlog = 4096</p>
-<h1 id="max-timewait-sockets-held-by-system-simultaneously"><a href="#max-timewait-sockets-held-by-system-simultaneously" class="header-anchor"></a>25.2.2. <a href="#max_timewait_sockets_held_by_system_simultaneously" class="headerlink" title="max timewait sockets held by system simultaneously"></a>max timewait sockets held by system simultaneously</h1><p>net.ipv4.tcp_max_tw_buckets = 5000</p>
-<h1 id="tcp-receive-buffer"><a href="#tcp-receive-buffer" class="header-anchor"></a>26.2.2. <a href="#TCP_receive_buffer" class="headerlink" title="TCP receive buffer"></a>TCP receive buffer</h1><p>net.ipv4.tcp_rmem = 4096 87380 67108864</p>
-<h1 id="tcp-write-buffer"><a href="#tcp-write-buffer" class="header-anchor"></a>27.2.2. <a href="#TCP_write_buffer" class="headerlink" title="TCP write buffer"></a>TCP write buffer</h1><p>net.ipv4.tcp_wmem = 4096 65536 67108864</p>
-<h1 id="turn-on-path-mtu-discovery"><a href="#turn-on-path-mtu-discovery" class="header-anchor"></a>28.2.2. <a href="#turn_on_path_MTU_discovery" class="headerlink" title="turn on path MTU discovery"></a>turn on path MTU discovery</h1><p>net.ipv4.tcp_mtu_probing = 1</p>
-<h1 id="for-high-latency-network"><a href="#for-high-latency-network" class="header-anchor"></a>29.2.2. <a href="#for_high-latency_network" class="headerlink" title="for high-latency network"></a>for high-latency network</h1><p>net.ipv4.tcp_congestion_control = htcp</p>
-<h1 id="forward-ipv4"><a href="#forward-ipv4" class="header-anchor"></a>30.2.2. <a href="#forward_ipv4" class="headerlink" title="forward ipv4"></a>forward ipv4</h1><p>net.ipv4.ip_forward = 1
-<code>``
-其中最后的</code>hybla<code>是为高延迟网络（如美国，欧洲）准备的算法，需要内核支持，测试内核是否支持，在终端输入：</code>sysctl net.ipv4.tcp_available_congestion_control<code>如果结果中有</code>hybla<code>，则证明你的内核已开启</code>hybla<code>，如果没有</code>hybla<code>，可以用命令</code>modprobe tcp_hybla`开启。</p>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>增加这个文件的可执行权限 <code>sudo chmod +x /etc/init.d/shadowsocks</code><br>在rc.d中新增<code>sudo update-rc.d shadowsocks defaults</code>，添加到开机启动中<br>以后就可以通过<code>sudo service shadowsocks {start|reload|stop}</code>来管理了。</p>
+<h3 id="ss-速度优化"><a href="#ss-速度优化" class="header-anchor"></a>2.2.4. <a href="#ss__u901F_u5EA6_u4F18_u5316" class="headerlink" title="ss 速度优化"></a>ss 速度优化</h3><p>基于kvm架构vps的优化<br>这方面SS给出了非常详尽的优化指南，主要有：优化内核参数，开启TCP Fast Open<br>这里只给出优化内核参数/优化加密方式的方法。更多、更详细的策略方法请参考<a href="https://github.com/iMeiji/shadowsocks_install/wiki/shadowsocks-optimize" target="_blank" rel="external">shadowsocks optimize</a></p>
+<h4 id="内核参数优化"><a href="#内核参数优化" class="header-anchor"></a>2.2.4.1. <a href="#u5185_u6838_u53C2_u6570_u4F18_u5316" class="headerlink" title="内核参数优化"></a>内核参数优化</h4><p>创建 /etc/sysctl.d/local.conf 并写入</p>
+<pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># max open files</span>
+fs.file-max <span class="token operator">=</span> 1024000
+<span class="token comment" spellcheck="true"># max read buffer</span>
+net.core.rmem_max <span class="token operator">=</span> 67108864
+<span class="token comment" spellcheck="true"># max write buffer</span>
+net.core.wmem_max <span class="token operator">=</span> 67108864
+<span class="token comment" spellcheck="true"># default read buffer</span>
+net.core.rmem_default <span class="token operator">=</span> 65536
+<span class="token comment" spellcheck="true"># default write buffer</span>
+net.core.wmem_default <span class="token operator">=</span> 65536
+<span class="token comment" spellcheck="true"># max processor input queue</span>
+net.core.netdev_max_backlog <span class="token operator">=</span> 4096
+<span class="token comment" spellcheck="true"># max backlog</span>
+net.core.somaxconn <span class="token operator">=</span> 4096
+
+<span class="token comment" spellcheck="true"># resist SYN flood attacks</span>
+net.ipv4.tcp_syncookies <span class="token operator">=</span> 1
+<span class="token comment" spellcheck="true"># reuse timewait sockets when safe</span>
+net.ipv4.tcp_tw_reuse <span class="token operator">=</span> 1
+<span class="token comment" spellcheck="true"># turn off fast timewait sockets recycling</span>
+net.ipv4.tcp_tw_recycle <span class="token operator">=</span> 0
+<span class="token comment" spellcheck="true"># short FIN timeout</span>
+net.ipv4.tcp_fin_timeout <span class="token operator">=</span> 30
+<span class="token comment" spellcheck="true"># short keepalive time</span>
+net.ipv4.tcp_keepalive_time <span class="token operator">=</span> 1200
+<span class="token comment" spellcheck="true"># outbound port range</span>
+net.ipv4.ip_local_port_range <span class="token operator">=</span> 10000 65000
+<span class="token comment" spellcheck="true"># max SYN backlog</span>
+net.ipv4.tcp_max_syn_backlog <span class="token operator">=</span> 4096
+<span class="token comment" spellcheck="true"># max timewait sockets held by system simultaneously</span>
+net.ipv4.tcp_max_tw_buckets <span class="token operator">=</span> 5000
+<span class="token comment" spellcheck="true"># TCP receive buffer</span>
+net.ipv4.tcp_rmem <span class="token operator">=</span> 4096 87380 67108864
+<span class="token comment" spellcheck="true"># TCP write buffer</span>
+net.ipv4.tcp_wmem <span class="token operator">=</span> 4096 65536 67108864
+<span class="token comment" spellcheck="true"># turn on path MTU discovery</span>
+net.ipv4.tcp_mtu_probing <span class="token operator">=</span> 1
+
+<span class="token comment" spellcheck="true"># for high-latency network</span>
+net.ipv4.tcp_congestion_control <span class="token operator">=</span> htcp
+<span class="token comment" spellcheck="true"># forward ipv4</span>
+net.ipv4.ip_forward <span class="token operator">=</span> 1
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>其中最后的<code>hybla</code>是为高延迟网络（如美国，欧洲）准备的算法，需要内核支持，测试内核是否支持，在终端输入：<code>sysctl net.ipv4.tcp_available_congestion_control</code><br>如果结果中有<code>hybla</code>，则证明你的内核已开启<code>hybla</code>，如果没有<code>hybla</code>，可以用命令<code>modprobe tcp_hybla</code>开启。</p>
 <p>对于低延迟的网络（如日本，香港等），可以使用<code>htcp</code>，可以非常显著的提高速度，首先使用<code>modprobe tcp_htcp</code>开启，再将<code>net.ipv4.tcp_congestion_control = hybla改为net.ipv4.tcp_congestion_control = htcp</code>，建议EC2日本用户使用这个算法。</p>
-<p>使配置生效：sysctl –system
-note: 经过手机Andoid客户端测试, 速度确实有提升（之前手机端速度感觉已经很快了！），YouTube上1080p的高清视频一点不卡，甚至于还没有缓冲到的时间点直接点击在3秒之内都可以缓冲出来（这个时候的即时速度可以到3M/s）。&lt;img src=&quot;/images/scenery.jpg&quot;/&gt;
-YouTube 1080p高清测试视频，<a href="https://youtu.be/6v2L2UGZJAM" target="_blank" rel="external">Planet Earth: Amazing nature scenery</a></p>
-<h4 id="tcp优化"><a href="#tcp优化" class="header-anchor"></a>30.2.2.1. <a href="#TCP_u4F18_u5316" class="headerlink" title="TCP优化"></a>TCP优化</h4><p>1.修改文件句柄数限制
-如果是ubuntu/centos均可修改/etc/sysctl.d/local.conf
-找到fs.file-max这一行，修改其值为1024000，并保存退出。然后执行<code>sysctl -p</code>使其生效
-修改vi /etc/security/limits.conf文件，加入
-<code>bash
-*               soft    nofile           512000
-*               hard    nofile          1024000</code>
-2.修改vi /etc/profile文件，加入
-<code>ulimit -SHn 1024000</code>
-然后重启服务器执行<code>ulimit -n</code>，查询返回1024000即可。</p>
-<p><code>bash
-sysctl.conf报错解决方法
+<p>使配置生效：sysctl –system<br>note: 经过手机Andoid客户端测试, 速度确实有提升（之前手机端速度感觉已经很快了！），YouTube上1080p的高清视频一点不卡，甚至于还没有缓冲到的时间点直接点击在3秒之内都可以缓冲出来（这个时候的即时速度可以到3M/s）。<img src="/images/scenery.jpg"><br>YouTube 1080p高清测试视频，<a href="https://youtu.be/6v2L2UGZJAM" target="_blank" rel="external">Planet Earth: Amazing nature scenery</a></p>
+<h4 id="tcp优化"><a href="#tcp优化" class="header-anchor"></a>2.2.4.2. <a href="#TCP_u4F18_u5316" class="headerlink" title="TCP优化"></a>TCP优化</h4><p>1.修改文件句柄数限制<br>如果是ubuntu/centos均可修改/etc/sysctl.d/local.conf<br>找到fs.file-max这一行，修改其值为1024000，并保存退出。然后执行<code>sysctl -p</code>使其生效<br>修改vi /etc/security/limits.conf文件，加入</p>
+<pre class="line-numbers language-bash"><code class="language-bash">*               soft    nofile           512000
+*               hard    nofile          1024000
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<p>2.修改vi /etc/profile文件，加入<br><code>ulimit -SHn 1024000</code><br>然后重启服务器执行<code>ulimit -n</code>，查询返回1024000即可。</p>
+<pre class="line-numbers language-bash"><code class="language-bash">sysctl.conf报错解决方法
 修复modprobe的：
-rm -f /sbin/modprobe
-ln -s /bin/true /sbin/modprobe
+<span class="token function">rm</span> -f /sbin/modprobe
+<span class="token function">ln</span> -s /bin/true /sbin/modprobe
 修复sysctl的：
-rm -f /sbin/sysctl
-ln -s /bin/true /sbin/sysctl</code></p>
-<h3 id="ss-加密优化"><a href="#ss-加密优化" class="header-anchor"></a>30.2.3. <a href="#ss__u52A0_u5BC6_u4F18_u5316" class="headerlink" title="ss 加密优化"></a>ss 加密优化</h3><ol>
-<li>装M2Crypto 这个可以提高SS的加密速度，安装办法：
-Debian/Ubuntu
-<code>apt-get install python-m2crypto</code>
-安装之后重启SS，速度将会有一定的提升</li>
-<li>装 gevent 安装 gevent可以提高 Shadowsocks 的性能。
-<code>apt-get install python-dev libevent-dev python-setuptools python-gevent easy_install greenlet gevent</code></li>
+<span class="token function">rm</span> -f /sbin/sysctl
+<span class="token function">ln</span> -s /bin/true /sbin/sysctl
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="ss-加密优化"><a href="#ss-加密优化" class="header-anchor"></a>2.2.5. <a href="#ss__u52A0_u5BC6_u4F18_u5316" class="headerlink" title="ss 加密优化"></a>ss 加密优化</h3><ol>
+<li>装M2Crypto 这个可以提高SS的加密速度，安装办法：<br>Debian/Ubuntu<br><code>apt-get install python-m2crypto</code><br>安装之后重启SS，速度将会有一定的提升</li>
+<li>装 gevent 安装 gevent可以提高 Shadowsocks 的性能。<pre><code>apt-get install python-dev libevent-dev python-setuptools python-gevent easy_install greenlet gevent
+</code></pre></li>
 </ol>
 
       
@@ -822,7 +866,7 @@ Debian/Ubuntu
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#shadowsocks-简介"><span class="nav-text">1. Shadowsocks 简介</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#ss-搭建"><span class="nav-text">2. ss 搭建</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#安装-ss"><span class="nav-text">2.1. 安装 ss</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#server端配置-ss"><span class="nav-text">2.2. server端配置 ss</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#即时启动"><span class="nav-text">2.2.1. 即时启动：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#使用配置文件启动"><span class="nav-text">2.2.2. 使用配置文件启动：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#开机启动"><span class="nav-text">2.2.3. 开机启动</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#binsh"><span class="nav-text">3.2. !/bin/sh</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#begin-init-info"><span class="nav-text">3.2.1. BEGIN INIT INFO</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#provides-shadowsocks"><span class="nav-text">4.2. Provides:          shadowsocks</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#required-start-remote_fs-syslog"><span class="nav-text">5.2. Required-Start:    $remote_fs $syslog</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#required-stop-remote_fs-syslog"><span class="nav-text">6.2. Required-Stop:     $remote_fs $syslog</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#default-start-2-3-4-5"><span class="nav-text">7.2. Default-Start:     2 3 4 5</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#default-stop-0-1-6"><span class="nav-text">8.2. Default-Stop:      0 1 6</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#short-description-start-shadowsocks"><span class="nav-text">9.2. Short-Description: start shadowsocks</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#description-start-shadowsocks"><span class="nav-text">10.2. Description:       start shadowsocks</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#end-init-info"><span class="nav-text">10.2.1. END INIT INFO</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#ss-速度优化"><span class="nav-text">10.2.2. ss 速度优化</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#内核参数优化"><span class="nav-text">10.2.2.1. 内核参数优化</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#max-open-files"><span class="nav-text">11.2.2. max open files</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#max-read-buffer"><span class="nav-text">12.2.2. max read buffer</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#max-write-buffer"><span class="nav-text">13.2.2. max write buffer</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#default-read-buffer"><span class="nav-text">14.2.2. default read buffer</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#default-write-buffer"><span class="nav-text">15.2.2. default write buffer</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#max-processor-input-queue"><span class="nav-text">16.2.2. max processor input queue</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#max-backlog"><span class="nav-text">17.2.2. max backlog</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#resist-syn-flood-attacks"><span class="nav-text">18.2.2. resist SYN flood attacks</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#reuse-timewait-sockets-when-safe"><span class="nav-text">19.2.2. reuse timewait sockets when safe</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#turn-off-fast-timewait-sockets-recycling"><span class="nav-text">20.2.2. turn off fast timewait sockets recycling</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#short-fin-timeout"><span class="nav-text">21.2.2. short FIN timeout</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#short-keepalive-time"><span class="nav-text">22.2.2. short keepalive time</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#outbound-port-range"><span class="nav-text">23.2.2. outbound port range</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#max-syn-backlog"><span class="nav-text">24.2.2. max SYN backlog</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#max-timewait-sockets-held-by-system-simultaneously"><span class="nav-text">25.2.2. max timewait sockets held by system simultaneously</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#tcp-receive-buffer"><span class="nav-text">26.2.2. TCP receive buffer</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#tcp-write-buffer"><span class="nav-text">27.2.2. TCP write buffer</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#turn-on-path-mtu-discovery"><span class="nav-text">28.2.2. turn on path MTU discovery</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#for-high-latency-network"><span class="nav-text">29.2.2. for high-latency network</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#forward-ipv4"><span class="nav-text">30.2.2. forward ipv4</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#tcp优化"><span class="nav-text">30.2.2.1. TCP优化</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#ss-加密优化"><span class="nav-text">30.2.3. ss 加密优化</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#shadowsocks-简介"><span class="nav-text">1. Shadowsocks 简介</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#ss-搭建"><span class="nav-text">2. ss 搭建</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#安装-ss"><span class="nav-text">2.1. 安装 ss</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#server端配置-ss"><span class="nav-text">2.2. server端配置 ss</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#即时启动"><span class="nav-text">2.2.1. 即时启动：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#使用配置文件启动"><span class="nav-text">2.2.2. 使用配置文件启动：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#开机启动"><span class="nav-text">2.2.3. 开机启动</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#ss-速度优化"><span class="nav-text">2.2.4. ss 速度优化</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#内核参数优化"><span class="nav-text">2.2.4.1. 内核参数优化</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#tcp优化"><span class="nav-text">2.2.4.2. TCP优化</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#ss-加密优化"><span class="nav-text">2.2.5. ss 加密优化</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>
