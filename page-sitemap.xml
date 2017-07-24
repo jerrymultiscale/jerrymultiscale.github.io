@@ -7,6 +7,13 @@
     </url>
     
     <url>
+        <loc>http://www.jiaxm.me/about/</loc>
+        <lastmod>2017-07-24T12:52:05.580Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
         <loc>http://www.jiaxm.me/Links/</loc>
         <lastmod>2017-07-23T08:44:11.381Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -16,13 +23,6 @@
     <url>
         <loc>http://www.jiaxm.me/tags/</loc>
         <lastmod>2017-07-22T15:33:23.430Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    
-    <url>
-        <loc>http://www.jiaxm.me/about/</loc>
-        <lastmod>2017-07-22T15:33:23.429Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>

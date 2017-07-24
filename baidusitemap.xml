@@ -3,6 +3,7 @@
 
 
     
+    
   <url>
     <loc>http://www.jiaxm.me/2017-07-day/python_code/</loc>
     <lastmod>2017-07-23T13:26:54.477Z</lastmod>
@@ -69,28 +70,6 @@
     
     
   <url>
-    <loc>http://www.jiaxm.me/2017-07-day/Ubuntu_Rescue_Mode_Repair/</loc>
-    <lastmod>2017-07-22T15:33:23.429Z</lastmod>
-    <data>
-        <display>
-        <title>Linux与Windows双系统启动引导恢复</title>
-        <pubTime>2017-07-17T16:00:00.000Z</pubTime>
-        
-        <tag>linux</tag>
-         
-        <tag>grub</tag>
-         
-         
-           
-             
-              <breadCrumb title="linux" url="http://www.jiaxm.me/categories/linux/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://www.jiaxm.me/2017-07-day/Linux_Terminal_Shortcuts/</loc>
     <lastmod>2017-07-22T15:33:23.429Z</lastmod>
     <data>
@@ -126,6 +105,28 @@
 
     
   <url>
+    <loc>http://www.jiaxm.me/2017-07-day/Ubuntu_Rescue_Mode_Repair/</loc>
+    <lastmod>2017-07-22T15:33:23.429Z</lastmod>
+    <data>
+        <display>
+        <title>Linux与Windows双系统启动引导恢复</title>
+        <pubTime>2017-07-17T16:00:00.000Z</pubTime>
+        
+        <tag>linux</tag>
+         
+        <tag>grub</tag>
+         
+         
+           
+             
+              <breadCrumb title="linux" url="http://www.jiaxm.me/categories/linux/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://www.jiaxm.me/2017-07-day/NumPy%20Learn/</loc>
     <lastmod>2017-07-22T15:33:23.429Z</lastmod>
     <data>
@@ -144,7 +145,6 @@
     </data>
     </url>
 
-    
     
     
   <url>
