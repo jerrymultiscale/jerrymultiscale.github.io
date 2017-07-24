@@ -112,18 +112,18 @@
 
 
 
-<meta name="description" content="由grub引导的Linux与Windows共存的双系统环境中，Windows版本更新的时候常会出现grub引导失败，造成系统无法正常启动的问题。这是因为Windows更新的过程中导致MBR损坏导致无法找到/boot/grub部分，无法进一步引导系统。而这种情况下启动界面上会启动grub rescue模式，本文即在此模式下恢复grub引导。&amp;lt;!--more--&amp;gt; 1. 术语简述1.1.">
+<meta name="description" content="由grub引导的Linux与Windows共存的双系统环境中，Windows版本更新的时候常会出现grub引导失败，造成系统无法正常启动的问题。这是因为Windows更新的过程中导致MBR损坏导致无法找到/boot/grub部分，无法进一步引导系统。而这种情况下启动界面上会启动grub rescue模式，本文即在此模式下恢复grub引导。">
 <meta name="keywords" content="linux,grub">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Linux与Windows双系统启动引导恢复">
 <meta property="og:url" content="http://www.jiaxm.me/2017-07-day/Ubuntu_Rescue_Mode_Repair/index.html">
 <meta property="og:site_name" content="Memories">
-<meta property="og:description" content="由grub引导的Linux与Windows共存的双系统环境中，Windows版本更新的时候常会出现grub引导失败，造成系统无法正常启动的问题。这是因为Windows更新的过程中导致MBR损坏导致无法找到/boot/grub部分，无法进一步引导系统。而这种情况下启动界面上会启动grub rescue模式，本文即在此模式下恢复grub引导。&amp;lt;!--more--&amp;gt; 1. 术语简述1.1.">
+<meta property="og:description" content="由grub引导的Linux与Windows共存的双系统环境中，Windows版本更新的时候常会出现grub引导失败，造成系统无法正常启动的问题。这是因为Windows更新的过程中导致MBR损坏导致无法找到/boot/grub部分，无法进一步引导系统。而这种情况下启动界面上会启动grub rescue模式，本文即在此模式下恢复grub引导。">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:updated_time" content="2017-07-22T15:33:23.429Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Linux与Windows双系统启动引导恢复">
-<meta name="twitter:description" content="由grub引导的Linux与Windows共存的双系统环境中，Windows版本更新的时候常会出现grub引导失败，造成系统无法正常启动的问题。这是因为Windows更新的过程中导致MBR损坏导致无法找到/boot/grub部分，无法进一步引导系统。而这种情况下启动界面上会启动grub rescue模式，本文即在此模式下恢复grub引导。&amp;lt;!--more--&amp;gt; 1. 术语简述1.1.">
+<meta name="twitter:description" content="由grub引导的Linux与Windows共存的双系统环境中，Windows版本更新的时候常会出现grub引导失败，造成系统无法正常启动的问题。这是因为Windows更新的过程中导致MBR损坏导致无法找到/boot/grub部分，无法进一步引导系统。而这种情况下启动界面上会启动grub rescue模式，本文即在此模式下恢复grub引导。">
 
 
 
@@ -462,7 +462,7 @@
       
 
       
-        <p>由grub引导的Linux与Windows共存的双系统环境中，Windows版本更新的时候常会出现grub引导失败，造成系统无法正常启动的问题。这是因为Windows更新的过程中导致MBR损坏导致无法找到/boot/grub部分，无法进一步引导系统。而这种情况下启动界面上会启动<code>grub rescue</code>模式，本文即在此模式下恢复grub引导。<br>&lt;!--more--&gt;</p>
+        <p>由grub引导的Linux与Windows共存的双系统环境中，Windows版本更新的时候常会出现grub引导失败，造成系统无法正常启动的问题。这是因为Windows更新的过程中导致MBR损坏导致无法找到/boot/grub部分，无法进一步引导系统。而这种情况下启动界面上会启动<code>grub rescue</code>模式，本文即在此模式下恢复grub引导。<br><a id="more"></a></p>
 <h1 id="术语简述"><a href="#术语简述" class="header-anchor"></a>1. <a href="#u672F_u8BED_u7B80_u8FF0" class="headerlink" title="术语简述"></a>术语简述</h1><h2 id="bios"><a href="#bios" class="header-anchor"></a>1.1. <a href="#BIOS" class="headerlink" title="BIOS"></a>BIOS</h2><p>“Basic Input Output System”，中文名称就是”基本输入输出系统”。其实，它是一组固化到计算机内主板上一个ROM芯片上的程序，它保存着计算机最重要的基本输入输出的程序、系统设置信息、开机后自检程序和系统自启动程序。 其主要功能是为计算机提供最底层的、最直接的硬件设置和控制。</p>
 <h2 id="mbr"><a href="#mbr" class="header-anchor"></a>1.2. <a href="#MBR" class="headerlink" title="MBR"></a>MBR</h2><p>“Master Boot Record” 硬盘的物理扇区，也叫主引导记录！因为BIOS 很小无法承载启动的运行程序，所以在bios检测到一个硬盘后，将硬盘的0柱面、0磁头、1扇区的内容经过简单判断后， 至内存中的指定位置，然后跳转至这个位置，开始从这个位置运行，大小为512个byte，其中主要存放引导程序和该硬盘的分区表。</p>
 <h2 id="grub"><a href="#grub" class="header-anchor"></a>1.3. <a href="#grub" class="headerlink" title="grub"></a>grub</h2><p>“GRand Unified Bootloade” 多重操作系统启动管理器，就是运行这个GRUB之后可以通过它来引导进入其它的系统，包括window以及linux</p>
