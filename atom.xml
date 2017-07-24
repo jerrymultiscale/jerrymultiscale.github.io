@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.jiaxm.me/"/>
-  <updated>2017-07-24T13:22:18.834Z</updated>
+  <updated>2017-07-24T13:24:11.695Z</updated>
   <id>http://www.jiaxm.me/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://www.jiaxm.me/2017-07-day/Markdown%20Writing/"/>
     <id>http://www.jiaxm.me/2017-07-day/Markdown Writing/</id>
     <published>2017-07-24T13:21:00.000Z</published>
-    <updated>2017-07-24T13:22:18.834Z</updated>
+    <updated>2017-07-24T13:24:11.695Z</updated>
     
     <content type="html"><![CDATA[<p>Markdown语法测试<br><a id="more"></a></p>
 <h1 id="任务列表"><a href="#任务列表" class="header-anchor"></a>1. <a href="#u4EFB_u52A1_u5217_u8868" class="headerlink" title="任务列表"></a>任务列表</h1><p>在任务项目前面加[]。用[x]表示此项已完成。</p>
