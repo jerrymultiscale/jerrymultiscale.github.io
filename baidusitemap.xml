@@ -5,18 +5,18 @@
     
   <url>
     <loc>http://www.jiaxm.me/2017-07-day/Markdown%20Writing/</loc>
-    <lastmod>2017-07-24T13:20:52.225Z</lastmod>
+    <lastmod>2017-07-24T13:22:18.834Z</lastmod>
     <data>
         <display>
-        <title>Hexo Configuration</title>
-        <pubTime>2017-07-13T11:40:00.000Z</pubTime>
+        <title>Markdown Writing</title>
+        <pubTime>2017-07-24T13:21:00.000Z</pubTime>
         
         <tag>markdown</tag>
          
          
            
              
-              <breadCrumb title="hexo" url="http://www.jiaxm.me/categories/hexo/"/>
+              <breadCrumb title="markdown" url="http://www.jiaxm.me/categories/markdown/"/>
           
         </display>
     </data>
@@ -130,21 +130,6 @@
     
     
   <url>
-    <loc>http://www.jiaxm.me/2017-07-day/ShiCiGeFu/</loc>
-    <lastmod>2017-07-22T15:33:23.429Z</lastmod>
-    <data>
-        <display>
-        <title>诗词歌赋</title>
-        <pubTime>2017-07-19T12:42:00.000Z</pubTime>
-        
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://www.jiaxm.me/2017-07-day/Linux_Terminal_Shortcuts/</loc>
     <lastmod>2017-07-22T15:33:23.429Z</lastmod>
     <data>
@@ -159,6 +144,21 @@
              
               <breadCrumb title="linux" url="http://www.jiaxm.me/categories/linux/"/>
           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.jiaxm.me/2017-07-day/ShiCiGeFu/</loc>
+    <lastmod>2017-07-22T15:33:23.429Z</lastmod>
+    <data>
+        <display>
+        <title>诗词歌赋</title>
+        <pubTime>2017-07-19T12:42:00.000Z</pubTime>
+        
+         
+           
         </display>
     </data>
     </url>
