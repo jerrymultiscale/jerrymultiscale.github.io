@@ -822,6 +822,43 @@ $content-desktop-large = <span class="token number">900</span>px
   </entry>
   
   <entry>
+    <title>Hexo Configuration</title>
+    <link href="http://www.jiaxm.me/2017-07-day/Markdown%20Writing/"/>
+    <id>http://www.jiaxm.me/2017-07-day/Markdown Writing/</id>
+    <published>2017-07-13T11:40:00.000Z</published>
+    <updated>2017-07-24T13:20:52.225Z</updated>
+    
+    <content type="html"><![CDATA[<p>Markdown语法测试<br><a id="more"></a></p>
+<h1 id="任务列表"><a href="#任务列表" class="header-anchor"></a>1. <a href="#u4EFB_u52A1_u5217_u8868" class="headerlink" title="任务列表"></a>任务列表</h1><p>在任务项目前面加[]。用[x]表示此项已完成。</p>
+<pre><code>- [x] Finish my changes
+- [ ] Push my commits to GitHub
+- [ ] Open a pull request
+</code></pre><ul>
+<li>[x] Finish my changes</li>
+<li>[ ] Push my commits to GitHub</li>
+<li>[ ] Open a pull request</li>
+</ul>
+<p>注意如果项目内容以（）开始要对（加转义字符\</p>
+<pre><code>- [ ] \(Optional) Open a followup issue
+</code></pre><ul>
+<li>[ ] (Optional) Open a followup issue</li>
+</ul>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Markdown语法测试&lt;br&gt;
+    
+    </summary>
+    
+      <category term="hexo" scheme="http://www.jiaxm.me/categories/hexo/"/>
+    
+    
+      <category term="markdown" scheme="http://www.jiaxm.me/tags/markdown/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Linux命令行快捷键</title>
     <link href="http://www.jiaxm.me/2017-07-day/Linux_Terminal_Shortcuts/"/>
     <id>http://www.jiaxm.me/2017-07-day/Linux_Terminal_Shortcuts/</id>

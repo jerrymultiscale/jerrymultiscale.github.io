@@ -4,6 +4,26 @@
 
     
   <url>
+    <loc>http://www.jiaxm.me/2017-07-day/Markdown%20Writing/</loc>
+    <lastmod>2017-07-24T13:20:52.225Z</lastmod>
+    <data>
+        <display>
+        <title>Hexo Configuration</title>
+        <pubTime>2017-07-13T11:40:00.000Z</pubTime>
+        
+        <tag>markdown</tag>
+         
+         
+           
+             
+              <breadCrumb title="hexo" url="http://www.jiaxm.me/categories/hexo/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://www.jiaxm.me/2017-07-day/Shadowsocks_Configuration/</loc>
     <lastmod>2017-07-24T13:03:10.440Z</lastmod>
     <data>
@@ -125,16 +145,14 @@
 
     
   <url>
-    <loc>http://www.jiaxm.me/2017-07-day/Ubuntu_Rescue_Mode_Repair/</loc>
+    <loc>http://www.jiaxm.me/2017-07-day/Linux_Terminal_Shortcuts/</loc>
     <lastmod>2017-07-22T15:33:23.429Z</lastmod>
     <data>
         <display>
-        <title>Linux与Windows双系统启动引导恢复</title>
-        <pubTime>2017-07-17T16:00:00.000Z</pubTime>
+        <title>Linux命令行快捷键</title>
+        <pubTime>2017-07-12T16:00:00.000Z</pubTime>
         
         <tag>linux</tag>
-         
-        <tag>grub</tag>
          
          
            
@@ -147,14 +165,16 @@
 
     
   <url>
-    <loc>http://www.jiaxm.me/2017-07-day/Linux_Terminal_Shortcuts/</loc>
+    <loc>http://www.jiaxm.me/2017-07-day/Ubuntu_Rescue_Mode_Repair/</loc>
     <lastmod>2017-07-22T15:33:23.429Z</lastmod>
     <data>
         <display>
-        <title>Linux命令行快捷键</title>
-        <pubTime>2017-07-12T16:00:00.000Z</pubTime>
+        <title>Linux与Windows双系统启动引导恢复</title>
+        <pubTime>2017-07-17T16:00:00.000Z</pubTime>
         
         <tag>linux</tag>
+         
+        <tag>grub</tag>
          
          
            
