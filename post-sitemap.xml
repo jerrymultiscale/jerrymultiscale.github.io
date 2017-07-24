@@ -7,6 +7,30 @@
     </url>
 
     <url>
+        <loc>http://www.jiaxm.me/2017-07-day/Shadowsocks_Configuration/</loc>
+        <lastmod>2017-07-24T13:03:10.440Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://www.jiaxm.me/2017-07-day/NumPy%20Learn/</loc>
+        <lastmod>2017-07-24T13:02:51.637Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://www.jiaxm.me/2017-07-day/VPS%20Configuraton/</loc>
+        <lastmod>2017-07-24T13:02:42.479Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>http://www.jiaxm.me/2017-07-day/Hexo%20Configuration/</loc>
         <lastmod>2017-07-24T13:00:34.645Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -23,23 +47,7 @@
     </url>
 
     <url>
-        <loc>http://www.jiaxm.me/2017-07-day/Shadowsocks_Configuration/</loc>
-        <lastmod>2017-07-23T12:31:43.863Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>http://www.jiaxm.me/2017-07-day/Linux_Terminal_Shortcuts/</loc>
-        <lastmod>2017-07-22T15:33:23.429Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>http://www.jiaxm.me/2017-07-day/NumPy%20Learn/</loc>
         <lastmod>2017-07-22T15:33:23.429Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -57,14 +65,6 @@
     <url>
         <loc>http://www.jiaxm.me/2017-07-day/Ubuntu_Rescue_Mode_Repair/</loc>
         <lastmod>2017-07-22T15:33:23.429Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>http://www.jiaxm.me/2017-07-day/VPS%20Configuraton/</loc>
-        <lastmod>2017-07-22T15:33:23.428Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 

@@ -42,7 +42,7 @@
     <link href="http://www.jiaxm.me/2017-07-day/NumPy%20Learn/"/>
     <id>http://www.jiaxm.me/2017-07-day/NumPy Learn/</id>
     <published>2017-07-19T01:55:00.000Z</published>
-    <updated>2017-07-22T15:33:23.429Z</updated>
+    <updated>2017-07-24T13:02:51.637Z</updated>
     
     <content type="html"><![CDATA[<p>NumPy, which stands for Numerical Python, is a library consisting of multidimensional array objects and a collection of routines for processing those arrays. Using NumPy, mathematical and logical operations on arrays can be performed<br>一些参考资料：<br><a href="http://scipy-lectures.github.io/intro/numpy/index.html" target="_blank" rel="external">Basics of numpy</a><br><a href="http://scipy-lectures.github.io/intro/numpy/exercises.html" target="_blank" rel="external">Some numpy exercises</a><br><a href="http://scipy-lectures.github.io/advanced/advanced_numpy/" target="_blank" rel="external">Advanced numpy</a><br><a href="http://docs.scipy.org/doc/numpy/reference/" target="_blank" rel="external">Numpy reference</a></p>
 <a id="more"></a>
@@ -261,7 +261,7 @@ grub<span class="token operator">></span> boot
     <link href="http://www.jiaxm.me/2017-07-day/Shadowsocks_Configuration/"/>
     <id>http://www.jiaxm.me/2017-07-day/Shadowsocks_Configuration/</id>
     <published>2017-07-13T16:00:00.000Z</published>
-    <updated>2017-07-23T12:31:43.863Z</updated>
+    <updated>2017-07-24T13:03:10.440Z</updated>
     
     <content type="html"><![CDATA[<p>对于做科研、写代码的同学来说，翻<a href="https://zh.wikipedia.org/wiki/%E9%98%B2%E7%81%AB%E9%95%BF%E5%9F%8E" target="_blank" rel="external">GFW</a>是必不可少的，对于专业的资料来说，google/sholar搜索的丰富程度可以秒某度的。梯子有很多种，例如改hosts、vpn(SoftEther)、浏览器翻墙的插件(谷歌上网助手)、自由门、GoAgent、cow、Lantern等等。今天我们来介绍一下在国外<a href="https://en.wikipedia.org/wiki/Virtual_private_server" target="_blank" rel="external">VPS</a>(Virtual private server)的搭建，不只是可以用来上google，scholar等，可以说相当于拥有了国外的网络环境，没有限制的浏览国外网站。<br><a id="more"></a></p>
 <h1 id="shadowsocks-简介"><a href="#shadowsocks-简介" class="header-anchor"></a>1. <a href="#Shadowsocks__u7B80_u4ECB" class="headerlink" title="Shadowsocks 简介"></a>Shadowsocks 简介</h1><p>维基百科搬运：</p>
@@ -851,7 +851,7 @@ $content-desktop-large = <span class="token number">900</span>px
     <link href="http://www.jiaxm.me/2017-07-day/VPS%20Configuraton/"/>
     <id>http://www.jiaxm.me/2017-07-day/VPS Configuraton/</id>
     <published>2017-07-04T04:00:04.000Z</published>
-    <updated>2017-07-22T15:33:23.428Z</updated>
+    <updated>2017-07-24T13:02:42.479Z</updated>
     
     <content type="html"><![CDATA[<p>VPS（Virtual Private Server 虚拟专用服务器）技术，将一台服务器分割成多个虚拟专享服务器的优质服务。简单的说，VPS就是一台拥有公网IP的服务器总结一下VPS搭建的过程，从域名的购买到VPS的设置<br><a id="more"></a></p>
 <h1 id="vps的配置"><a href="#vps的配置" class="header-anchor"></a>1. <a href="#VPS_u7684_u914D_u7F6E" class="headerlink" title="VPS的配置"></a>VPS的配置</h1><h2 id="vps的购买-tbd"><a href="#vps的购买-tbd" class="header-anchor"></a>1.1. <a href="#VPS_u7684_u8D2D_u4E70_TBD" class="headerlink" title="VPS的购买 TBD"></a>VPS的购买 TBD</h2><h2 id="vps在ubuntu-1704下的软件配置"><a href="#vps在ubuntu-1704下的软件配置" class="header-anchor"></a>1.2. <a href="#VPS_u5728ubuntu_17-04_u4E0B_u7684_u8F6F_u4EF6_u914D_u7F6E" class="headerlink" title="VPS在ubuntu 17.04下的软件配置"></a>VPS在ubuntu 17.04下的软件配置</h2><pre class="line-numbers language-bash"><code class="language-bash">$ <span class="token function">apt-get</span> update <span class="token operator">&amp;&amp;</span> <span class="token function">apt-get</span> upgrade
