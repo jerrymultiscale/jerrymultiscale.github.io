@@ -14,13 +14,6 @@
     </url>
 
     <url>
-        <loc>http://www.jiaxm.me/categories/hexo/</loc>
-        <lastmod>2017-07-24T13:00:34.645Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>http://www.jiaxm.me/categories/VPS/</loc>
         <lastmod>2017-07-24T13:02:42.479Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -37,6 +30,13 @@
     <url>
         <loc>http://www.jiaxm.me/categories/markdown/</loc>
         <lastmod>2017-07-24T13:24:11.695Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://www.jiaxm.me/categories/hexo/</loc>
+        <lastmod>2017-07-25T07:03:21.424Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>

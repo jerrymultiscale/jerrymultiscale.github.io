@@ -23,20 +23,6 @@
     </url>
 
     <url>
-        <loc>http://www.jiaxm.me/tags/next/</loc>
-        <lastmod>2017-07-24T13:00:34.645Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>http://www.jiaxm.me/tags/hexo/</loc>
-        <lastmod>2017-07-24T13:00:34.645Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>http://www.jiaxm.me/tags/python/</loc>
         <lastmod>2017-07-24T13:02:51.637Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -60,6 +46,20 @@
     <url>
         <loc>http://www.jiaxm.me/tags/markdown/</loc>
         <lastmod>2017-07-24T13:24:11.695Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://www.jiaxm.me/tags/next/</loc>
+        <lastmod>2017-07-25T07:03:21.424Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://www.jiaxm.me/tags/hexo/</loc>
+        <lastmod>2017-07-25T07:03:21.424Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
