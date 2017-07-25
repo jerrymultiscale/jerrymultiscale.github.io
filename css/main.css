@@ -934,10 +934,10 @@ pre .javascript .function {
   z-index: 1050;
   padding: 0 6px;
   width: initial;
-  background: #222;
+  background: #fff;
   font-size: 12px;
   opacity: 1;
-  color: #00f;
+  color: #008000;
   cursor: pointer;
   text-align: center;
   -webkit-transform: translateZ(0);
@@ -1799,7 +1799,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #dbffff;
+  background: #491275;
 }
 .links-of-blogroll {
   font-size: 13px;
