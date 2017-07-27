@@ -4,28 +4,8 @@
 
     
   <url>
-    <loc>http://www.jiaxm.me/2017-07-day/VPS%20Configuraton/</loc>
-    <lastmod>2017-07-25T12:28:26.189Z</lastmod>
-    <data>
-        <display>
-        <title>VPS Configuration</title>
-        <pubTime>2017-07-04T04:00:04.000Z</pubTime>
-        
-        <tag>VPS</tag>
-         
-         
-           
-             
-              <breadCrumb title="VPS" url="http://www.jiaxm.me/categories/VPS/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://www.jiaxm.me/2017-07-day/Hexo%20Configuration/</loc>
-    <lastmod>2017-07-25T08:33:30.255Z</lastmod>
+    <lastmod>2017-07-27T02:25:36.049Z</lastmod>
     <data>
         <display>
         <title>Hexo Configuration</title>
@@ -39,6 +19,26 @@
            
              
               <breadCrumb title="hexo" url="http://www.jiaxm.me/categories/hexo/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.jiaxm.me/2017-07-day/VPS%20Configuraton/</loc>
+    <lastmod>2017-07-25T12:28:26.189Z</lastmod>
+    <data>
+        <display>
+        <title>VPS Configuration</title>
+        <pubTime>2017-07-04T04:00:04.000Z</pubTime>
+        
+        <tag>VPS</tag>
+         
+         
+           
+             
+              <breadCrumb title="VPS" url="http://www.jiaxm.me/categories/VPS/"/>
           
         </display>
     </data>

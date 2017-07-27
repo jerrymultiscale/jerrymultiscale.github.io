@@ -496,7 +496,7 @@ net.ipv4.ip_forward <span class="token operator">=</span> 1
     <link href="http://www.jiaxm.me/2017-07-day/Hexo%20Configuration/"/>
     <id>http://www.jiaxm.me/2017-07-day/Hexo Configuration/</id>
     <published>2017-07-13T11:40:00.000Z</published>
-    <updated>2017-07-25T08:33:30.255Z</updated>
+    <updated>2017-07-27T02:25:36.049Z</updated>
     
     <content type="html"><![CDATA[<p>Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。本文为Hexo相关的东西，大部分与特性配置有关。<br><a id="more"></a></p>
 <h1 id="特性配置"><a href="#特性配置" class="header-anchor"></a>1. <a href="#u7279_u6027_u914D_u7F6E" class="headerlink" title="特性配置"></a>特性配置</h1><h2 id="添加邮箱链接控制"><a href="#添加邮箱链接控制" class="header-anchor"></a>1.1. <a href="#u6DFB_u52A0_u90AE_u7BB1_u94FE_u63A5_u63A7_u5236" class="headerlink" title="添加邮箱链接控制"></a>添加邮箱链接控制</h2><p>安装插件<code>hexo-email-obfuscate</code>，参考<a href="https://www.npmjs.com/package/hexo-email-obfuscate" target="_blank" rel="external">这里</a></p>
@@ -874,6 +874,7 @@ $content-desktop-large = <span class="token number">900</span>px
 <li>next主题：将图片放在next主题source/images目录下</li>
 <li>在next主题配置文件中添加：<code>favicon: images/favicon.ico</code>;或者直接把<code>favicon.ico</code>放到站点source文件夹</li>
 </ol>
+<h2 id="使用emoji表情"><a href="#使用emoji表情" class="header-anchor"></a>1.22. <a href="#u4F7F_u7528emoji_u8868_u60C5" class="headerlink" title="使用emoji表情"></a>使用emoji表情</h2><p>test  <img class="github-emoji" title="smile" alt="smile" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f604.png?v7" height="20" width="20"> </p>
 <h1 id="主题配置参考"><a href="#主题配置参考" class="header-anchor"></a>2. <a href="#u4E3B_u9898_u914D_u7F6E_u53C2_u8003" class="headerlink" title="主题配置参考"></a>主题配置参考</h1><ol>
 <li><a href="http://chitanda.me/2015/06/11/tips-for-setup-hexo/" target="_blank" rel="external">markdown table</a></li>
 </ol>
