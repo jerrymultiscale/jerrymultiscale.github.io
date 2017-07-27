@@ -496,7 +496,7 @@ net.ipv4.ip_forward <span class="token operator">=</span> 1
     <link href="http://www.jiaxm.me/2017-07-day/Hexo%20Configuration/"/>
     <id>http://www.jiaxm.me/2017-07-day/Hexo Configuration/</id>
     <published>2017-07-13T11:40:00.000Z</published>
-    <updated>2017-07-27T02:48:23.046Z</updated>
+    <updated>2017-07-27T02:51:15.204Z</updated>
     
     <content type="html"><![CDATA[<p>Hexo &#x662F;&#x4E00;&#x4E2A;&#x5FEB;&#x901F;&#x3001;&#x7B80;&#x6D01;&#x4E14;&#x9AD8;&#x6548;&#x7684;&#x535A;&#x5BA2;&#x6846;&#x67B6;&#x3002;Hexo &#x4F7F;&#x7528; Markdown&#xFF08;&#x6216;&#x5176;&#x4ED6;&#x6E32;&#x67D3;&#x5F15;&#x64CE;&#xFF09;&#x89E3;&#x6790;&#x6587;&#x7AE0;&#xFF0C;&#x5728;&#x51E0;&#x79D2;&#x5185;&#xFF0C;&#x5373;&#x53EF;&#x5229;&#x7528;&#x9753;&#x4E3D;&#x7684;&#x4E3B;&#x9898;&#x751F;&#x6210;&#x9759;&#x6001;&#x7F51;&#x9875;&#x3002;&#x672C;&#x6587;&#x4E3A;Hexo&#x76F8;&#x5173;&#x7684;&#x4E1C;&#x897F;&#xFF0C;&#x5927;&#x90E8;&#x5206;&#x4E0E;&#x7279;&#x6027;&#x914D;&#x7F6E;&#x6709;&#x5173;&#x3002;<br><a id="more"></a></p>
 <h1 id="x7279x6027x914dx7f6e"><a href="#x7279x6027x914dx7f6e" class="header-anchor"></a>1. <a href="#u7279_u6027_u914D_u7F6E" class="headerlink" title="&#x7279;&#x6027;&#x914D;&#x7F6E;"></a>&#x7279;&#x6027;&#x914D;&#x7F6E;</h1><h2 id="x6dfbx52a0x90aex7bb1x94fex63a5x63a7x5236"><a href="#x6dfbx52a0x90aex7bb1x94fex63a5x63a7x5236" class="header-anchor"></a>1.1. <a href="#u6DFB_u52A0_u90AE_u7BB1_u94FE_u63A5_u63A7_u5236" class="headerlink" title="&#x6DFB;&#x52A0;&#x90AE;&#x7BB1;&#x94FE;&#x63A5;&#x63A7;&#x5236;"></a>&#x6DFB;&#x52A0;&#x90AE;&#x7BB1;&#x94FE;&#x63A5;&#x63A7;&#x5236;</h2><p>&#x5B89;&#x88C5;&#x63D2;&#x4EF6;<code>hexo-email-obfuscate</code>&#xFF0C;&#x53C2;&#x8003;<a href="https://www.npmjs.com/package/hexo-email-obfuscate" target="_blank" rel="external">&#x8FD9;&#x91CC;</a></p>
@@ -874,7 +874,7 @@ $content-desktop-large = <span class="token number">900</span>px
 <li>next&#x4E3B;&#x9898;&#xFF1A;&#x5C06;&#x56FE;&#x7247;&#x653E;&#x5728;next&#x4E3B;&#x9898;source/images&#x76EE;&#x5F55;&#x4E0B;</li>
 <li>&#x5728;next&#x4E3B;&#x9898;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x4E2D;&#x6DFB;&#x52A0;&#xFF1A;<code>favicon: images/favicon.ico</code>;&#x6216;&#x8005;&#x76F4;&#x63A5;&#x628A;<code>favicon.ico</code>&#x653E;&#x5230;&#x7AD9;&#x70B9;source&#x6587;&#x4EF6;&#x5939;</li>
 </ol>
-<h2 id="x8bbex7f6eemoji"><a href="#x8bbex7f6eemoji" class="header-anchor"></a>1.22. <a href="#u8BBE_u7F6Eemoji" class="headerlink" title="&#x8BBE;&#x7F6E;emoji"></a>&#x8BBE;&#x7F6E;emoji</h2><p>to test this plugin! <img class="github-emoji" title="smile" alt="smile" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f604.png?v7" height="20" width="20"></p>
+<h2 id="x8bbex7f6eemoji"><a href="#x8bbex7f6eemoji" class="header-anchor"></a>1.22. <a href="#u8BBE_u7F6Eemoji" class="headerlink" title="&#x8BBE;&#x7F6E;emoji"></a>&#x8BBE;&#x7F6E;emoji</h2><p>to test this plugin! :simple_smile:</p>
 <h1 id="x4e3bx9898x914dx7f6ex53c2x8003"><a href="#x4e3bx9898x914dx7f6ex53c2x8003" class="header-anchor"></a>2. <a href="#u4E3B_u9898_u914D_u7F6E_u53C2_u8003" class="headerlink" title="&#x4E3B;&#x9898;&#x914D;&#x7F6E;&#x53C2;&#x8003;"></a>&#x4E3B;&#x9898;&#x914D;&#x7F6E;&#x53C2;&#x8003;</h1><ol>
 <li><a href="http://chitanda.me/2015/06/11/tips-for-setup-hexo/" target="_blank" rel="external">markdown table</a></li>
 </ol>
